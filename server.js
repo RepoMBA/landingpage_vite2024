@@ -1,104 +1,68 @@
-import fs from 'node:fs/promises'
-import express from 'express'
-import { Transform } from 'node:stream'
+const express = require('express');
+const { renderToString } = require('react-dom/server');
+const { StaticRouter } = require('react-router-dom/server');
+const fs = require('fs');
+const path = require('path');
+const { createServer: createViteServer } = require('vite');
+const React = require('react');
+const { HelmetProvider } = require('react-helmet-async');
+const App = require('../src/App').default;
+const AmpHome = require('../src/pages/AmpHome').default;
 
-// Constants
-const isProduction = process.env.NODE_ENV === 'production'
-const port = process.env.PORT || 5173
-const base = process.env.BASE || '/'
-const ABORT_DELAY = 10000
-
-// Cached production assets
-const templateHtml = isProduction
-  ? await fs.readFile('./dist/client/index.html', 'utf-8')
-  : ''
-const ssrManifest = isProduction
-  ? await fs.readFile('./dist/client/.vite/ssr-manifest.json', 'utf-8')
-  : undefined
-
-// Create http server
-const app = express()
-
-// Add Vite or respective production middlewares
-let vite
-if (!isProduction) {
-  const { createServer } = await import('vite')
-  vite = await createServer({
+async function createServer() {
+  const app = express();
+  const vite = await createViteServer({
     server: { middlewareMode: true },
     appType: 'custom',
-    base
-  })
-  app.use(vite.middlewares)
-} else {
-  const compression = (await import('compression')).default
-  const sirv = (await import('sirv')).default
-  app.use(compression())
-  app.use(base, sirv('./dist/client', { extensions: [] }))
-}
+  });
 
-// Serve HTML
-app.use('*', async (req, res) => {
-  try {
-    const url = req.originalUrl.replace(base, '')
+  app.use(vite.middlewares);
 
-    let template
-    let render
-    if (!isProduction) {
-      // Always read fresh template in development
-      template = await fs.readFile('./index.html', 'utf-8')
-      template = await vite.transformIndexHtml(url, template)
-      render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render
-    } else {
-      template = templateHtml
-      render = (await import('./dist/server/entry-server.js')).render
+  app.use('*', async (req, res) => {
+    const url = req.originalUrl;
+    const isAmp = req.query.amp === '1';
+
+    let template;
+    try {
+      const templatePath = isAmp
+        ? path.resolve(__dirname, 'template-amp.html')
+        : path.resolve(__dirname, 'template.html');
+      template = fs.readFileSync(templatePath, 'utf-8');
+      template = await vite.transformIndexHtml(url, template);
+    } catch (e) {
+      vite.ssrFixStacktrace(e);
+      console.error(e);
+      res.status(500).end(e.message);
+      return;
     }
 
-    let didError = false
+    try {
+      const helmetContext = {};
+      const appHtml = renderToString(
+        <HelmetProvider context={helmetContext}>
+          <StaticRouter location={url}>
+            {isAmp ? <AmpHome /> : <App />}
+          </StaticRouter>
+        </HelmetProvider>
+      );
 
-    const { pipe, abort } = render(url, ssrManifest, {
-      onShellError() {
-        res.status(500)
-        res.set({ 'Content-Type': 'text/html' })
-        res.send('<h1>Something went wrong</h1>')
-      },
-      onShellReady() {
-        res.status(didError ? 500 : 200)
-        res.set({ 'Content-Type': 'text/html' })
+      const { helmet } = helmetContext;
+      const html = template
+        .replace(`<!--ssr-outlet-->`, appHtml)
+        .replace(`<!--title-->`, helmet.title.toString())
+        .replace(`<!--meta-->`, helmet.meta.toString() + helmet.link.toString() + helmet.script.toString());
 
-        const transformStream = new Transform({
-          transform(chunk, encoding, callback) {
-            res.write(chunk, encoding)
-            callback()
-          }
-        })
+      res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
+    } catch (e) {
+      vite.ssrFixStacktrace(e);
+      console.error(e);
+      res.status(500).end(e.message);
+    }
+  });
 
-        const [htmlStart, htmlEnd] = template.split(`<!--app-html-->`)
+  app.listen(3000, () => {
+    console.log('Server is running at http://localhost:3000');
+  });
+}
 
-        res.write(htmlStart)
-
-        transformStream.on('finish', () => {
-          res.end(htmlEnd)
-        })
-
-        pipe(transformStream)
-      },
-      onError(error) {
-        didError = true
-        console.error(error)
-      }
-    })
-
-    setTimeout(() => {
-      abort()
-    }, ABORT_DELAY)
-  } catch (e) {
-    vite?.ssrFixStacktrace(e)
-    console.log(e.stack)
-    res.status(500).end(e.stack)
-  }
-})
-
-// Start http server
-app.listen(port, () => {
-  console.log(`Server started at http://localhost:${port}`)
-})
+createServer();
