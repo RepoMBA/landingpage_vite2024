@@ -1,32 +1,18 @@
-import { Suspense, lazy } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from "react";
+import AppRoutes from "./routes";
+import { Link } from "react-router-dom";
 
-// Works also with SSR as expected
-const Card = lazy(() => import('./Card'))
-
-function App() {
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+    <div>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </nav>
 
-      <Suspense fallback={<p>Loading card component...</p>}>
-        <Card />
-      </Suspense>
+      <AppRoutes />
+    </div>
+  );
+};
 
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+export default App;

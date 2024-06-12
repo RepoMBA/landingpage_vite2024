@@ -1,50 +1,22 @@
-// src/pages/Home.tsx
-import React from 'react';
-import Meta from '../components/Meta';
-import AmpCard from '../components/AmpCard';
+import { Helmet } from "react-helmet";
 
-const Home: React.FC = () => {
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "http://example.com/home"
-      }
-    ]
-  };
-
-  const orgSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Example Inc.",
-    "url": "http://example.com",
-    "logo": "http://example.com/logo.png"
-  };
-
-  const ogSchema = {
-    title: "Home Page",
-    description: "Welcome to the Home Page",
-    type: "website",
-    url: "http://example.com/home",
-    image: "http://example.com/image.jpg"
-  };
-
+const Home:React.FC<{}> = () => {
   return (
     <div>
-      <Meta
-        title="Home Page"
-        description="This is the home page"
-        keywords="home, example"
-        breadcrumbSchema={breadcrumbSchema}
-        orgSchema={orgSchema}
-        ogSchema={ogSchema}
-      />
-      <h1>Welcome to the Home Page</h1>
-      <AmpCard />
+      <Helmet>
+        <title>Home Page</title>
+        <meta
+          name="description"
+          content="This is the home page of our Vite SSR React website."
+        />
+      </Helmet>
+
+      <div>
+        <h1>Welcome to the Home Page</h1>
+        <p>
+          This is a simple server-side rendered website with React and Vite.
+        </p>
+      </div>
     </div>
   );
 };
