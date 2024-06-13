@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
+import HeroSection from "../components/HeroSection";
+import NewHeader from "../components/Header/NewHeader";
 
-const Home:React.FC<{}> = () => {
+const Home: React.FC<{}> = () => {
   return (
     <div>
       <Helmet>
@@ -12,10 +14,9 @@ const Home:React.FC<{}> = () => {
       </Helmet>
 
       <div>
+        <NewHeader />
         <h1>Welcome to the Home Page</h1>
-        <p>
-          This is a simple server-side rendered website with React and Vite.
-        </p>
+        <HeroSection />
       </div>
     </div>
   );
