@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useRef } from "react";
 import { Drawer, List, ListItem, ListItemText } from "@mui/material";
 import { Divider, Collapse } from "@mui/material";
