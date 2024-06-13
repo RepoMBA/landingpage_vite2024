@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{html,js,jsx,ts,tsx,vue}", // Source folder
-    "./public/**/*.html", // Public folder for HTML files
+    "./index.html",
+    "./src/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -20,8 +22,8 @@ export default {
     },
   },
   plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/aspect-ratio"),
+    // require("@tailwindcss/forms"),
+    // require("@tailwindcss/typography"),
+    // require("@tailwindcss/aspect-ratio"),
   ],
 };
