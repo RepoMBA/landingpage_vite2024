@@ -1,0 +1,59 @@
+.mobile-drawer-main-container .MuiDrawer-paper {
+  width: 95%;
+}
+.mobile-drawer-main-container .MuiButtonBase-root.MuiListItem-root {
+  align-items: flex-start !important;
+}
+.top-nav-main-container.MuiDrawer-root {
+  top: 61px;
+}
+.top-nav-main-container .MuiPaper-root.MuiDrawer-paper {
+  box-shadow: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #eee;
+}
+.top-nav-main-container .MuiBackdrop-root {
+  top: 61px !important;
+}
+
+.common-button {
+  background-color: #9b0242;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-outline {
+  border: 1px solid #9b0242;
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #9b0242;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #acacac;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

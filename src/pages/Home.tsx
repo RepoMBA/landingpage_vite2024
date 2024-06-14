@@ -1,6 +1,14 @@
 import { Helmet } from "react-helmet";
 import HeroSection from "../components/HeroSection";
 import NewHeader from "../components/Header/NewHeader";
+import CustomersSection from "../components/CustomersSection";
+import ValueSection from "../components/ValueSection";
+import FeatureSection from "../components/FeatureSection";
+import SmallBusinessSection from "../components/SmallBusinessSection";
+import BlogSection from "../components/BlogSection";
+import PartnersSection from "../components/PartnersSection";
+import DemoBannerSection from "../components/DemoBannerSection";
+import Footer from "../components/Footer";
 
 const Home: React.FC<{}> = () => {
   return (
@@ -13,10 +21,17 @@ const Home: React.FC<{}> = () => {
         />
       </Helmet>
 
-      <div>
+      <div className="">
         <NewHeader />
-        <h1>Welcome to the Home Page</h1>
         <HeroSection />
+        <CustomersSection />
+        <SmallBusinessSection />
+        {/* <FeatureSection /> */}
+        {/* <BlogSection /> */}
+        <ValueSection />
+        <PartnersSection />
+        <DemoBannerSection />
+        <Footer />
       </div>
     </div>
   );

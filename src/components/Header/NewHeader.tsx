@@ -211,12 +211,13 @@ export default function NewHeader() {
   return (
     <div>
       <header>
-        <nav className="bg-[#fff] border-gray-200 px-4 lg:px-6 fixed top-0 w-full z-[999]">
-          <div className="flex justify-between items-center mx-auto max-w-screen-[1431px]">
+        <nav className="bg-[#fff] border-gray-200  fixed top-0 w-full z-[999] ">
+          <div className="flex justify-between items-center mx-auto max-w-screen-[1431px] px-[4%]">
             <a href="#!" className="logo">
               <img
                 src="https://d2qb2qddg7l6c6.cloudfront.net/assets/images/logo.png"
                 alt="Logo"
+                className="h-[61px]"
               />
             </a>
             <div className="flex items-center lg:order-2 gap-[10px] text-[14px]">
