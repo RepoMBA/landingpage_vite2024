@@ -86,11 +86,105 @@ const menuItems: Record<string, MenuItem> = {
     ),
     width: "40%",
   },
+  Solutions: {
+    content: (
+      <div className="flex justify-center items-center">
+        <div className="sm:grid sm:grid-cols-2 md:grid-cols-2 gap-4 max-w-[900px] w-full bg-[#fff] rounded-none rounded-b-[20px] px-[10px]">
+          <div className="p-1 flex flex-col gap-2">
+            <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#f07346] border-b-[#f07346]">
+              Departments
+            </div>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Legal
+            </a>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Sales
+            </a>{" "}
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              IT
+            </a>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Finance
+            </a>
+          </div>
+
+          <div className="p-1 flex flex-col gap-3">
+            <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#017e84] border-b-[#017e84]">
+              Integrations
+            </div>
+
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Salesforce
+            </a>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Microsoft Dynamics
+            </a>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Zoho
+            </a>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Quickbook
+            </a>
+          </div>
+        </div>
+      </div>
+    ),
+    width: "30%",
+  },
   Resources: {
     content: (
       <div className="flex justify-center items-center">
-        <div className="flex flex-col max-w-[900px] w-full bg-[#fff] rounded-none rounded-b-[20px] px-[20px]">
-          <div className="p-1 flex flex-col gap-2 col-span-1">
+        <div className="flex flex max-w-[900px] w-full bg-[#fff] rounded-none rounded-b-[20px] px-[20px]">
+          <div className="p-1 flex w-[200px] flex-col gap-2 col-span-1">
+            {" "}
+            <a
+              href="/contract-management-software"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Contract Management Software
+            </a>
+            <a
+              href="/"
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              Glosary
+            </a>
+            <a
+              href=""
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              eBooks
+            </a>{" "}
+            <a
+              href=""
+              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+            >
+              White Papers
+            </a>
             <a
               href="https://legittai.com/release-notes"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
@@ -109,15 +203,9 @@ const menuItems: Record<string, MenuItem> = {
             >
               Product Tour
             </a>
-            <a
-              href="/contract-management-software"
-              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
-            >
-              Contract Management Software
-            </a>
           </div>
 
-          <div className="p-1 flex flex-col gap-2 col-span-1">
+          <div className="p-1 flex w-[250px] flex-col gap-2 col-span-1">
             <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#9b0242] border-b-[#9b0242]">
               Blogs
             </div>
@@ -134,7 +222,7 @@ const menuItems: Record<string, MenuItem> = {
         </div>
       </div>
     ),
-    width: "300px",
+    width: "450px",
   },
   Company: {
     content: (
@@ -142,6 +230,7 @@ const menuItems: Record<string, MenuItem> = {
         <div className="flex justify-center items-center">
           <div className="sm:grid sm:grid-cols-2 md:grid-cols-1 gap-4 max-w-[600px] w-full bg-[#fff] rounded-none rounded-b-[20px] px-[20px]">
             <div className="p-1 flex flex-col gap-2">
+              {" "}
               <a
                 href="https://legittai.com/about-us"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
@@ -153,6 +242,12 @@ const menuItems: Record<string, MenuItem> = {
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 Privacy Policy
+              </a>
+              <a
+                href="https://legittai.com/job-list"
+                className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+              >
+                Jobs & Careers
               </a>
               <a
                 href="https://legittai.com/demo"
@@ -336,177 +431,269 @@ export default function NewHeader() {
           <Close onClick={handleHamburgerToggle} />
         </div>
         <div className="w-[100%] px-4" role="presentation">
-          {["Home", "Products", "Resources", "Company", "Pricing"].map(
-            (text) => (
-              <div key={text}>
-                <ListItem button onClick={() => handleAccordionToggle(text)}>
-                  {text === "Home" ? (
-                    <a href="https://legittai.com/">
-                      <ListItemText primary={text} />
-                    </a>
-                  ) : text === "Pricing" ? (
-                    <a href="https://legittai.com/pricing">
-                      <ListItemText primary={text} />
-                    </a>
-                  ) : (
+          {[
+            "Home",
+            "Products",
+            "Resources",
+            "Company",
+            "Solutions",
+            "Pricing",
+          ].map((text) => (
+            <div key={text}>
+              <ListItem button onClick={() => handleAccordionToggle(text)}>
+                {text === "Home" ? (
+                  <a href="https://legittai.com/">
                     <ListItemText primary={text} />
-                  )}
-                  {["Resources", "Products", "Company"].includes(text) &&
-                    (openMobileDrawerAccordion === text ? (
-                      <ExpandLessIcon />
-                    ) : (
-                      <ExpandMoreIcon />
-                    ))}
-                </ListItem>
-
-                {["Resources", "Products", "Company"].includes(text) && (
-                  <Collapse
-                    in={openMobileDrawerAccordion === text}
-                    timeout="auto"
-                    unmountOnExit
-                  >
-                    <List component="div" disablePadding>
-                      {text === "Products" && (
-                        <ListItem button className="pl-4 flex-col">
-                          <div className="flex flex-col pl-[20px] gap-1 w-full">
-                            <div className="text-[15px] border-b-[1px] w-full py-1 mb-1 text-[#f07346] border-b-[#f07346]">
-                              Apps
-                            </div>
-                            <a
-                              href="https://legittai.com/legitt-lite"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Legitt Lite
-                            </a>
-                            <a
-                              href="https://legittai.com/legitt-pro"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Legitt Pro
-                            </a>
-                          </div>
-
-                          <div className="flex flex-col pl-[20px] gap-1 w-full">
-                            <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#017e84] border-b-[#017e84]">
-                              AI Tools
-                            </div>
-
-                            <a
-                              href="https://legittai.com/contract-generator"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              AI Contract Generator
-                            </a>
-                            <a
-                              href="https://legittai.com/contract-review"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              AI Contract Review
-                            </a>
-                            <a
-                              href="https://legittai.com/repo-analyzer"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              AI Repo Analyzer
-                            </a>
-                          </div>
-
-                          <div className="flex flex-col pl-[20px] gap-1 w-full">
-                            <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#714b67] border-b-[#714b67]">
-                              Free Tools
-                            </div>
-                            <a
-                              href="https://legittai.com/electronic-signature"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              e-Signature
-                            </a>
-                            <a
-                              href="https://legittai.com/free-contract-templates"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Free Contract Templates
-                            </a>
-                          </div>
-                        </ListItem>
-                      )}
-                      {text === "Resources" && (
-                        <ListItem button className="pl-4 flex-col">
-                          <div className="flex flex-col gap-1 pl-[20px] col-span-1">
-                            <a
-                              href="https://legittai.com/release-notes"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Release Notes
-                            </a>
-                            <a
-                              href="https://legittai.com/videos"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Videos
-                            </a>
-                            <a
-                              href="https://legittai.com/product-tour"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Product Tour
-                            </a>
-                            <a
-                              href="contract-management-software"
-                              className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Contract Management Software
-                            </a>
-                          </div>
-
-                          <div className="flex flex-col gap-1 pl-[20px] col-span-1">
-                            <a
-                              href="https://legittai.com/blog/"
-                              className="text-[15px] border-b-[1px] py-1 mb-1 text-[#9b0242] border-b-[#9b0242]"
-                            >
-                              Blogs
-                            </a>
-                            <div className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer">
-                              Discover the latest trends, best practices and
-                              more in the world of legal and legal tech.
-                            </div>
-                            <div className="flex justify-start items-center">
-                              <div className="common-button">See All</div>
-                            </div>
-                          </div>
-                        </ListItem>
-                      )}
-                      {text === "Company" && (
-                        <ListItem button className="pl-4 flex-col">
-                          <div className="flex flex-col gap-2">
-                            <a
-                              href="https://legittai.com/about-us"
-                              className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              About Us
-                            </a>
-                            <a
-                              href="https://legittai.com/privacy-policy"
-                              className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Privacy Policy
-                            </a>
-                            <a
-                              href="https://legittai.com/demo"
-                              className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                            >
-                              Schedule A Demo
-                            </a>
-                          </div>
-                        </ListItem>
-                      )}
-                    </List>
-                  </Collapse>
+                  </a>
+                ) : text === "Pricing" ? (
+                  <a href="https://legittai.com/pricing">
+                    <ListItemText primary={text} />
+                  </a>
+                ) : (
+                  <ListItemText primary={text} />
                 )}
-                {/* {text !== "Pricing" && <Divider />} */}
-              </div>
-            )
-          )}
+                {["Resources", "Products", "Company", "Solutions"].includes(
+                  text
+                ) &&
+                  (openMobileDrawerAccordion === text ? (
+                    <ExpandLessIcon />
+                  ) : (
+                    <ExpandMoreIcon />
+                  ))}
+              </ListItem>
+
+              {["Resources", "Products", "Company", "Solutions"].includes(
+                text
+              ) && (
+                <Collapse
+                  in={openMobileDrawerAccordion === text}
+                  timeout="auto"
+                  unmountOnExit
+                >
+                  <List component="div" disablePadding>
+                    {text === "Products" && (
+                      <ListItem button className="pl-4 flex-col">
+                        <div className="flex flex-col pl-[20px] gap-1 w-full">
+                          <div className="text-[15px] border-b-[1px] w-full py-1 mb-1 text-[#f07346] border-b-[#f07346]">
+                            Apps
+                          </div>
+                          <a
+                            href="https://legittai.com/legitt-lite"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Legitt Lite
+                          </a>
+                          <a
+                            href="https://legittai.com/legitt-pro"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Legitt Pro
+                          </a>
+                        </div>
+
+                        <div className="flex flex-col pl-[20px] gap-1 w-full">
+                          <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#017e84] border-b-[#017e84]">
+                            AI Tools
+                          </div>
+
+                          <a
+                            href="https://legittai.com/contract-generator"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            AI Contract Generator
+                          </a>
+                          <a
+                            href="https://legittai.com/contract-review"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            AI Contract Review
+                          </a>
+                          <a
+                            href="https://legittai.com/repo-analyzer"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            AI Repo Analyzer
+                          </a>
+                        </div>
+
+                        <div className="flex flex-col pl-[20px] gap-1 w-full">
+                          <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#714b67] border-b-[#714b67]">
+                            Free Tools
+                          </div>
+                          <a
+                            href="https://legittai.com/electronic-signature"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            e-Signature
+                          </a>
+                          <a
+                            href="https://legittai.com/free-contract-templates"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Free Contract Templates
+                          </a>
+                        </div>
+                      </ListItem>
+                    )}{" "}
+                    {text === "Solutions" && (
+                      <ListItem button className="pl-4 flex-col">
+                        <div className="flex flex-col pl-[20px] gap-1 w-full">
+                          <div className="text-[15px] w-full border-b-[1px] py-1 mb-1 text-[#f07346] border-b-[#f07346]">
+                            Departments
+                          </div>
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Legal
+                          </a>
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Sales
+                          </a>{" "}
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            IT
+                          </a>
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Finance
+                          </a>
+                        </div>
+
+                        <div className="flex flex-col pl-[20px] gap-1 w-full">
+                          <div className="text-[15px] border-b-[1px] py-1 mb-1 text-[#017e84] border-b-[#017e84]">
+                            Integrations
+                          </div>
+
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Salesforce
+                          </a>
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Microsoft Dynamics
+                          </a>
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Zoho
+                          </a>
+                          <a
+                            href="/"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Quickbook
+                          </a>
+                        </div>
+                      </ListItem>
+                    )}
+                    {text === "Resources" && (
+                      <ListItem button className="pl-4 flex-col">
+                        <div className="flex flex-col gap-1 pl-[20px] col-span-1">
+                          <a
+                            href="contract-management-software"
+                            className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Contract Management Software
+                          </a>{" "}
+                          <a
+                            href="/"
+                            className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Glosary
+                          </a>
+                          <a
+                            href=""
+                            className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            eBooks
+                          </a>{" "}
+                          <a
+                            href=""
+                            className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            White Papers
+                          </a>
+                          <a
+                            href="https://legittai.com/release-notes"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Release Notes
+                          </a>
+                          <a
+                            href="https://legittai.com/videos"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Videos
+                          </a>
+                          <a
+                            href="https://legittai.com/product-tour"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Product Tour
+                          </a>
+                        </div>
+
+                        <div className="flex flex-col gap-1 pl-[20px] col-span-1">
+                          <a
+                            href="https://legittai.com/blog/"
+                            className="text-[15px] border-b-[1px] py-1 mb-1 text-[#9b0242] border-b-[#9b0242]"
+                          >
+                            Blogs
+                          </a>
+                          <div className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer">
+                            Discover the latest trends, best practices and more
+                            in the world of legal and legal tech.
+                          </div>
+                          <div className="flex justify-start items-center">
+                            <div className="common-button">See All</div>
+                          </div>
+                        </div>
+                      </ListItem>
+                    )}
+                    {text === "Company" && (
+                      <ListItem button className="pl-4 flex-col">
+                        <div className="flex flex-col gap-2">
+                          {" "}
+                          <a
+                            href="https://legittai.com/about-us"
+                            className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            About Us
+                          </a>
+                          <a
+                            href="https://legittai.com/privacy-policy"
+                            className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Privacy Policy
+                          </a>
+                          <a
+                            href="https://legittai.com/demo"
+                            className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Schedule A Demo
+                          </a>
+                        </div>
+                      </ListItem>
+                    )}
+                  </List>
+                </Collapse>
+              )}
+              {/* {text !== "Pricing" && <Divider />} */}
+            </div>
+          ))}
           <Divider className="py-2" />
           <div className="flex flex-col sm:flex-row px-4 mt-2 gap-2">
             <a

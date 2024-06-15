@@ -2,7 +2,7 @@ export default function SmallBusinessSection() {
   return (
     <div className="">
       <section className="overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-[6%]">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
@@ -101,7 +101,13 @@ export default function SmallBusinessSection() {
               </div>
             </div>
             <div>
-              <video className="w-full h-full" autoPlay loop muted playsInline>
+              <video
+                className="w-full h-full mix-blend-soft-light"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source
                   src="https://yellow.ai/wp-content/uploads/2023/04/dynamic-automation-2.webm"
                   type="video/mp4"
@@ -112,9 +118,9 @@ export default function SmallBusinessSection() {
         </div>
       </section>
 
-      <section className="overflow-hidden mt-[100px] mb-[100px]  mx-[4%] rounded-[50px] bg-[#d4cfe552] py-8 sm:py-16">
-        <div className="px-6 pb-[100px] lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <section className="overflow-hidden mt-[100px] mb-[100px]  mx-[6%] rounded-[50px] bg-[#d4cfe552] py-8 sm:py-16">
+        <div className="px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex justify-center items-center">
               <img
                 src="https://yellow.ai/wp-content/uploads/2023/04/human-experience-1.webp"
