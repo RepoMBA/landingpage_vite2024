@@ -25,6 +25,12 @@ const menuItems: Record<string, MenuItem> = {
                 Apps
               </div>
               <a
+                href="/contract-management-software"
+                className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+              >
+                Contract Management Software
+              </a>
+              <a
                 href="https://legittai.com/legitt-lite"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
@@ -161,12 +167,6 @@ const menuItems: Record<string, MenuItem> = {
         <div className="flex flex max-w-[900px] w-full bg-[#fff] rounded-none rounded-b-[20px] px-[20px]">
           <div className="p-1 flex w-[200px] flex-col gap-2 col-span-1">
             {" "}
-            <a
-              href="/contract-management-software"
-              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
-            >
-              Contract Management Software
-            </a>
             <a
               href="/"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
@@ -478,6 +478,12 @@ export default function NewHeader() {
                             Apps
                           </div>
                           <a
+                            href="/contract-management-software"
+                            className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
+                          >
+                            Contract Management Software
+                          </a>
+                          <a
                             href="https://legittai.com/legitt-lite"
                             className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
                           >
@@ -602,12 +608,6 @@ export default function NewHeader() {
                     {text === "Resources" && (
                       <ListItem button className="pl-4 flex-col">
                         <div className="flex flex-col gap-1 pl-[20px] col-span-1">
-                          <a
-                            href="contract-management-software"
-                            className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
-                          >
-                            Contract Management Software
-                          </a>{" "}
                           <a
                             href="/"
                             className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
