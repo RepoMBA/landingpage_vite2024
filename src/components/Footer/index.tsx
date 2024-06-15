@@ -427,28 +427,8 @@ export default function Footer() {
           </div>
 
           <div className="mt-12 border-t border-gray-100 pt-6">
-            <div className="text-center sm:flex sm:justify-between sm:text-left">
-              <p className="text-sm text-gray-500">
-                <span className="block sm:inline">All rights reserved.</span>
-
-                <a
-                  className="inline-block text-[#000] underline transition hover:text-[#000]"
-                  href="#"
-                >
-                  Terms & Conditions
-                </a>
-
-                <span>&middot;</span>
-
-                <a
-                  className="inline-block text-[#000] underline transition hover:text-[#000]"
-                  href="#"
-                >
-                  Privacy Policy
-                </a>
-              </p>
-
-              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+            <div className="text-center">
+              <p className="mt-4  text-sm text-gray-500 sm:order-first sm:mt-0">
                 &copy; Onitt & Upepo Technology Labs Inc 2024. All rights
                 reserved
               </p>
