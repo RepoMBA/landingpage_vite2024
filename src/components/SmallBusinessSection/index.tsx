@@ -1,7 +1,7 @@
 export default function SmallBusinessSection() {
   return (
     <div className="">
-      <section className="overflow-hidden mx-[4%] rounded-[50px] bg-[#F4EEE5] py-8 sm:py-16">
+      <section className="overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
@@ -112,8 +112,8 @@ export default function SmallBusinessSection() {
         </div>
       </section>
 
-      <section className="overflow-hidden mt-[50px]">
-        <div className="mx-auto max-w-7xl px-6 pb-[100px] lg:px-8">
+      <section className="overflow-hidden mt-[100px] mb-[100px]  mx-[4%] rounded-[50px] bg-[#d4cfe552] py-8 sm:py-16">
+        <div className="px-6 pb-[100px] lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex justify-center items-center">
               <img

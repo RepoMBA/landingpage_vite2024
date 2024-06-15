@@ -213,7 +213,7 @@ export default function NewHeader() {
       <header>
         <nav className="bg-[#fff] border-gray-200  fixed top-0 w-full z-[999] ">
           <div className="flex justify-between items-center mx-auto max-w-screen-[1431px] px-[4%]">
-            <a href="#!" className="logo">
+            <a href="/" className="logo">
               <img
                 src="https://d2qb2qddg7l6c6.cloudfront.net/assets/images/logo.png"
                 alt="Logo"

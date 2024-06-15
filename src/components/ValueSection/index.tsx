@@ -86,12 +86,12 @@ const ValueSection: React.FC = () => {
             >
               {customizeSlides.map((slide, index) => (
                 <div className="flex-none w-full" key={index}>
-                  <div className="text-2xl font-bold mt-5 ml-4 mb-5 hidden">
+                  <div className="text-2xl font-bold mt-5 ml-4 mb-5 block 968sm:hidden">
                     {slide.title}
                   </div>
                   <div className="flex gap-[20px]">
                     <div
-                      className={`text-white w-[65%] rounded-[20px] min-h-[350px] flex ml-[70px]  gap-[20px] px-[40px] py-[20px] flex-col justify-center  ${
+                      className={`text-white w-[85%] 1019sm:w-[65%] rounded-[20px] min-h-[350px] flex ml-[70px]  gap-[20px] px-[40px] py-[20px] flex-col justify-center  ${
                         index === 0
                           ? "bg-blue-600"
                           : index === 1
@@ -112,7 +112,7 @@ const ValueSection: React.FC = () => {
                       </div>
                       <div className="text-lg mt-3">{slide.description}</div>
                     </div>
-                    <div className="mr-16 w-[35%]">
+                    <div className="mr-16 w-[35%] hidden 1019sm:block">
                       <img
                         src={slide.imageUrl}
                         alt="image"
@@ -136,7 +136,7 @@ const ValueSection: React.FC = () => {
               &#10095;
             </button>
           </div>
-          <div className="active-card-buttons-container flex justify-center items-center mt-7">
+          <div className="active-card-buttons-container flex justify-center items-center mt-7 hidden 968sm:flex">
             {customizeSlides.map((slide, index) => (
               <button
                 key={index}

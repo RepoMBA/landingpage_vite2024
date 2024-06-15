@@ -21,6 +21,14 @@ export default {
       borderRadius: {
         "4xl": "2rem",
       },
+      screens: {
+        "700sm": "700px",
+        "968sm": "968px",
+        "1019sm": "1019px",
+        "1171sm": "1171px",
+        "1280sm": "1280px",
+        "1344sm": "1344px",
+      },
     },
   },
   plugins: [

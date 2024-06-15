@@ -9,6 +9,7 @@ import BlogSection from "../components/BlogSection";
 import PartnersSection from "../components/PartnersSection";
 import DemoBannerSection from "../components/DemoBannerSection";
 import Footer from "../components/Footer";
+import ContractIntelligence from "../components/ContractIntelligenceSection";
 
 const Home: React.FC<{}> = () => {
   return (
@@ -25,6 +26,7 @@ const Home: React.FC<{}> = () => {
         <NewHeader />
         <HeroSection />
         <CustomersSection />
+        <ContractIntelligence />
         <SmallBusinessSection />
         {/* <FeatureSection /> */}
         {/* <BlogSection /> */}

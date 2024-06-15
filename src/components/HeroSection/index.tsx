@@ -2,8 +2,8 @@ import ConnectingLine from "../../assets/images/ConnectingLine.svg";
 import ConnectingLineTwo from "../../assets/images/ConnectingLineTwo.svg";
 export default function HeroSection() {
   return (
-    <div className="mt-[75px] flex gap-[5px] px-[4%] min-h-[80vh] justify-center items-center ">
-      <div className="w-1/2">
+    <div className="mt-[75px] flex flex-col gap-[5px] px-[4%] min-h-[80vh] justify-center items-center 1171sm:flex-row ">
+      <div className="w-full 1171sm:w-1/2 text-center 1171sm:text-left">
         <div className="">
           <div className="text-[25px] font-[500]">Empower</div>
           <div className="mt-[-12px] bg-gradient-to-r from-[#6E5EC6]  to-[#ff0066] text-transparent bg-clip-text font-[700] text-[48px]">
@@ -22,7 +22,7 @@ export default function HeroSection() {
           easier by embedding intelligence in every step.
         </div>
 
-        <div className="mt-[20px] flex gap-2 items-center">
+        <div className="mt-[20px] flex gap-2 justify-center items-center 1171sm:justify-start">
           {" "}
           <input
             placeholder="e.g. name@yourcompany.com"
@@ -32,19 +32,19 @@ export default function HeroSection() {
           <button className="common-button">Schedule A Demo</button>
         </div>
       </div>
-      <div className="w-1/2 flex flex-col gap-[40px]">
-        <div className="flex items-center gap-2">
+      <div className="w-full 1171sm:w-1/2 mt-[20px] 1171sm:mt-[0px]  flex flex-col 1171sm:items-end gap-[40px] items-center">
+        <div className="flex flex-col 700sm:flex-row  w-full 700sm:w-auto items-center gap-2">
           <div className="flex items-baseline gap-2">
-            <div className="shadow-md px-3 py-2 text-[14px] font-[600]">
+            <div className=" shadow-none 700sm:shadow-md px-3 py-2 text-[20px] 700sm:text-[14px] font-[600]">
               Sales Intelligence{" "}
             </div>
-            <div>
+            <div className="700sm:flex hidden">
               <img src={ConnectingLine} alt="Connecting Line" />
             </div>
           </div>
 
           <div className="flex gap-3 flex-col">
-            <div className="flex gap-[30px]">
+            <div className="flex gap-[10px] 1344sm:gap-[30px]">
               <div>
                 <div className="w-[80px] h-[80px] rounded-md flex justify-center items-center bg-[#fff] shadow-lg">
                   <img
@@ -101,12 +101,12 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="flex gap-1 items-center">
+        <div className="flex flex-col 700sm:flex-row  w-full 700sm:w-auto items-center gap-2">
           <div className="flex items-start gap-2">
-            <div className="shadow-md px-3 py-2 text-[14px] font-[600]">
+            <div className=" shadow-none 700sm:shadow-md px-3 py-2 text-[20px] 700sm:text-[14px] font-[600]">
               Contract Creation
             </div>
-            <div>
+            <div className="700sm:flex hidden">
               <img
                 src={ConnectingLineTwo}
                 alt="Connecting Line"
@@ -115,7 +115,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex gap-3 flex-col">
-            <div className="flex gap-[30px]">
+            <div className="flex gap-[10px] 1344sm:gap-[30px]">
               {" "}
               <div>
                 <div className="w-[80px] h-[80px] rounded-md flex justify-center items-center bg-[#fff] shadow-lg">
@@ -170,7 +170,7 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-[30px]">
+            <div className="flex gap-[10px] 1344sm:gap-[30px]">
               <div>
                 <div className="w-[80px] h-[80px] rounded-md flex justify-center items-center bg-[#fff] shadow-lg">
                   <img
