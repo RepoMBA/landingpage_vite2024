@@ -260,7 +260,7 @@ const menuItems: Record<string, MenuItem> = {
         </div>
       </div>
     ),
-    width: "400px", // Adjusted width for the "Company" section
+    width: "200px", // Adjusted width for the "Company" section
   },
 };
 
