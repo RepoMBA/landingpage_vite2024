@@ -200,7 +200,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="/about-us"
                     >
                       About Us
                     </a>
@@ -209,7 +209,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="/privacy-policy"
                     >
                       Privacy Policy
                     </a>
@@ -218,7 +218,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="/terms-and-conditions"
                     >
                       Terms & Conditions
                     </a>
@@ -236,7 +236,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="invest"
                     >
                       Invest With Us
                     </a>
