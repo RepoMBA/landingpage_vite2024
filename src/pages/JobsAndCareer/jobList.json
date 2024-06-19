@@ -1,0 +1,27 @@
+[
+    {
+      "jobName": "Full Stack Developer",
+      "location": "NOIDA, Uttar Pradesh, INDIA",
+      "experienceDetail": "3-5 years",
+      "team": "Technology",
+      "jobType": "Full Time",
+      "jobDescription":"Build and maintain web applications from the ground up.  Experience with both front-end and back-end development is required."
+    },
+    {
+      "jobName": "AI Developer",
+      "location": "NOIDA, Uttar Pradesh, INDIA",
+      "experienceDetail": "3-5 years",
+      "team": "Technology",
+      "jobType": "Part Time",
+      "jobDescription":"Design, develop, and implement cutting-edge AI solutions using machine learning and deep learning techniques."
+    },
+    {
+      "jobName": "Sales Manager",
+      "location": "NOIDA, Uttar Pradesh, INDIA",
+      "experienceDetail": "3-5 years",
+      "team": "Sales",
+      "jobType": "Full Time",
+      "jobDescription":"Lead a high-performing sales team to achieve ambitious revenue goals. Develop and coach talent to secure new deals and build strong client relationships."
+    }
+  ]
+  

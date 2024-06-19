@@ -1,0 +1,10 @@
+.custom-list li::marker {
+    color: rgba(29, 158, 233, 0.979);
+  }
+
+  .gradient-text {
+    background: linear-gradient(43deg, #ffa600, #e034d4 46%, #4158d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

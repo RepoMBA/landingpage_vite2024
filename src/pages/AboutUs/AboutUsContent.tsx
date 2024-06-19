@@ -68,11 +68,11 @@ export default function AboutUsContent() {
                 </div>
 
                 <div className="flex flex-col items-center text-xl text-center mt-8">
-                    <h1 className="text-3xl font-bold mb-4">We Care About Your Business</h1>
-                    <p className="mb-4 max-w-2xl">
-                        Legitt AI is more than just a contract management platform—it's a catalyst for transformation, innovation, and success. With our forward-thinking approach, advanced technology, and unwavering commitment to excellence, we empower organizations to unlock new possibilities, drive sustainable growth, and shape a future where contract management is smarter, simpler, and more impactful than ever before. Join us on this journey to reimagine contract management and unleash the full potential of your business with Legitt AI.
-                    </p>
-                    <a href="https://legittai.com/demo"><button className="px-6 py-2 bg-[#9b0242] text-white rounded-lg">Schedule a Demo</button></a>
+                <h1 className="text-3xl font-bold mb-4">We Care About Your Business</h1>
+                <p className="mb-4 max-w-2xl">
+                    Legitt AI is more than just a contract management platform—it's a catalyst for transformation, innovation, and success. With our forward-thinking approach, advanced technology, and unwavering commitment to excellence, we empower organizations to unlock new possibilities, drive sustainable growth, and shape a future where contract management is smarter, simpler, and more impactful than ever before. Join us on this journey to reimagine contract management and unleash the full potential of your business with Legitt AI.
+                </p>
+                <a href="https://legittai.com/demo"><button className="px-6 py-2 bg-[#9b0242] text-white rounded-lg">Schedule a Demo</button></a>
                 </div>
 
 

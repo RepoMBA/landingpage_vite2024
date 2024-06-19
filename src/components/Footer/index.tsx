@@ -227,7 +227,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="/job-list"
                     >
                       Jobs & Careers
                     </a>
@@ -236,7 +236,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="invest"
+                      href="/invest"
                     >
                       Invest With Us
                     </a>
