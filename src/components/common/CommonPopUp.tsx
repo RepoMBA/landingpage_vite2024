@@ -34,7 +34,7 @@ const CommonPopUp: React.FC<PopupProps> = ({
       open={open}
       onClose={onClose}
       aria-labelledby="popup-dialog-title"
-      maxWidth="lg"
+      maxWidth='xs'
       fullWidth
     >
       <DialogTitle id="popup-dialog-title">

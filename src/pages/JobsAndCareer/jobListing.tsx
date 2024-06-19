@@ -27,11 +27,11 @@ const JobsOpened: React.FC = () => {
   };
 
   const instructionPopupBodyContent = (
-    <div className='align-center'>
-      <b>Hello Applicant!</b>
-      <p>Mail your Resume to</p>
-      <a href='mailto:info@legittai.com' className='px-7 py-auto my-9 bg-green-400 rounded-lg'>info@legittai.com</a>
-      <p>Do not forget to mention the post you are applying for!</p>
+    <div className='text-center justify-center'>
+      <b className='block text-3xl font-semibold mb-2'>Hello Applicant!</b>
+      <p className="mb-2 text-xl">Mail your Resume to</p>
+      <a href='mailto:info@legittai.com' className=' className="mb-3 py-2 my-4 bg-green-400 rounded-lg inline-block"'>info@legittai.com</a>
+      <p className="mb-1 text-xl">Do not forget to mention the post you are applying for!</p>
     </div>
   );
   const filteredJobs = (jobListings as JobListing[]).filter((job) => {
