@@ -12,6 +12,8 @@ import LegittLite from "../pages/LegittLite";
 import ContractManagementSoftware from "../pages/ContractManagementSoftware";
 import LegittPro from "../pages/LegittPro";
 import Legal from "../pages/Legal";
+import Sales from "../pages/Sales";
+import IT from "../pages/IT";
 
 const AppRoutes = () => {
   return (
@@ -38,6 +40,8 @@ const AppRoutes = () => {
       {/* Solutions */}
 
       <Route path="/legal" element={<Legal />} />
+      <Route path="/sales" element={<Sales />} />
+      <Route path="/it" element={<IT />} />
     </Routes>
   );
 };

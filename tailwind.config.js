@@ -51,7 +51,7 @@ export default {
         ".headingunderline::before": {
           content: '""',
           position: "absolute",
-          width: "235px", // Default width
+          width: "210px", // Default width
           height: "0.4em",
           bottom: "4px",
           left: "-0.15em",
