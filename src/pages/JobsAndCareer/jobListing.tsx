@@ -11,8 +11,6 @@ interface JobListing {
   jobDescription: string;
 }
 
-
-
 const JobsOpened: React.FC = () => {
   const [selectedTeam, setSelectedTeam] = useState<string>('All');
   const [selectedJobType, setSelectedJobType] = useState<string>('All');
@@ -27,24 +25,31 @@ const JobsOpened: React.FC = () => {
   };
 
   const instructionPopupBodyContent = (
-    <div className='text-center justify-center'>
-      <b className='block text-3xl font-semibold mb-2'>Hello Applicant!</b>
-      <p className="mb-2 text-xl">Mail your Resume to</p>
-      <a href='mailto:info@legittai.com' className=' className="mb-3 py-2 my-4 bg-green-400 rounded-lg inline-block"'>info@legittai.com</a>
-      <p className="mb-1 text-xl">Do not forget to mention the post you are applying for!</p>
+    <div className='text-center p-4'>
+      <b className='block text-2xl md:text-3xl font-semibold mb-4 text-gray-800'>Hello Applicant!</b>
+      <p className="mb-4 text-lg md:text-xl text-gray-700">Please send your resume to</p>
+      <a 
+        href='mailto:info@legittai.com' 
+        className='mb-4 inline-block text-lg md:text-xl py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300'
+      >
+        info@legittai.com
+      </a>
+      <p className="text-lg md:text-xl text-gray-700">Don't forget to mention the position you are applying for!</p>
     </div>
   );
+  
+
   const filteredJobs = (jobListings as JobListing[]).filter((job) => {
     return (
       (selectedTeam === 'All' || job.team === selectedTeam) &&
       (selectedJobType === 'All' || job.jobType === selectedJobType)
     );
   });
-  
+
   return (
-    <div className="mt-24 px-32">
-      <div className="flex justify-between mb-8">
-        <div className="flex flex-col">
+    <div className="mt-24 px-4 sm:px-8 lg:px-32">
+      <div className="flex flex-col md:flex-row justify-between mb-8">
+        <div className="flex flex-col mb-4 md:mb-0">
           <b className="mb-2">Teams</b>
           <div>
             <select
@@ -86,22 +91,20 @@ const JobsOpened: React.FC = () => {
         {filteredJobs.length > 0 ? (
           filteredJobs.map((job) => (
             <div
-              className="flex justify-between items-center mb-4 p-4 border border-gray-300 rounded-lg shadow-md"
+              className="flex flex-col md:flex-row justify-between items-center mb-4 p-4 border border-gray-300 rounded-lg shadow-md"
               key={job.jobName}
             >
-              <div>
-                <div className='flex items-center gap-6'>
-                <div className="text-xl font-semibold w-128">{job.jobName}</div>
-                <div className="text-gray-600 w-128">{job.location}</div>
+              <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+                <div className="text-xl font-semibold w-full md:w-48">{job.jobName}</div>
+                <div className="text-gray-600 w-full md:w-48">{job.location}</div>
                 <div className="text-gray-600">{job.experienceDetail}</div>
-                </div>
-                <div className="text-gray-600 mt-2">{job.jobDescription}</div>
               </div>
+              <div className="text-gray-600 mt-2 md:mt-0">{job.jobDescription}</div>
               <div>
                 <button
-                onClick={handleOpenPopup}
+                  onClick={handleOpenPopup}
                   type="button"
-                  className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                  className="mt-2 md:mt-0 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                 >
                   Apply
                 </button>
@@ -113,13 +116,13 @@ const JobsOpened: React.FC = () => {
         )}
       </div>
       <CommonPopUp 
-            open={InstructionPopUpOpen}
-            onClose={handleClosePopup}
-            title="Applying?"
-            content={instructionPopupBodyContent}
-            width={400}
-            height={200}
-            showCloseIcon={true}
+        open={InstructionPopUpOpen}
+        onClose={handleClosePopup}
+        title="Applying?"
+        content={instructionPopupBodyContent}
+        width={400}
+        height={200}
+        showCloseIcon={true}
       />
     </div>
   );

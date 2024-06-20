@@ -270,7 +270,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="group flex gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                      href="#"
+                      href="/videos"
                     >
                       <span className="text-gray-700 transition group-hover:text-gray-700/75">
                         Videos
@@ -295,17 +295,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
-                    >
-                      {" "}
-                      Schedule A Demo
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="/support"
                     >
                       Support
                     </a>
