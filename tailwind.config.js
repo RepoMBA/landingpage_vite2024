@@ -23,17 +23,44 @@ export default {
       },
       screens: {
         "700sm": "700px",
+        "800sm": "800px",
         "968sm": "968px",
         "1019sm": "1019px",
         "1171sm": "1171px",
+        "1200sm": "1200px",
         "1280sm": "1280px",
         "1344sm": "1344px",
+        "1350sm": "1350px",
       },
     },
   },
   plugins: [
-    // require("@tailwindcss/forms"),
-    // require("@tailwindcss/typography"),
-    // require("@tailwindcss/aspect-ratio"),
+    function ({ addComponents, addUtilities }) {
+      // Adding the base styles for `.headingunderline`
+      const newUtilities = {
+        ".headingunderline": {
+          position: "relative",
+          display: "inline-block",
+          marginLeft: "0.2em",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+
+      // Adjusting the `addComponents` for the pseudo-element
+      addComponents({
+        ".headingunderline::before": {
+          content: '""',
+          position: "absolute",
+          width: "235px", // Default width
+          height: "0.4em",
+          bottom: "4px",
+          left: "-0.15em",
+          zIndex: "-1",
+          borderRadius: "2em",
+          transition: "width 0.5s ease-in-out",
+          background: "linear-gradient(270deg, #fa826c 0%, #ffc1ae 100%)",
+        },
+      });
+    },
   ],
 };

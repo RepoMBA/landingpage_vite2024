@@ -1,22 +1,17 @@
+import React from "react";
 import { Helmet } from "react-helmet";
-
-const About = () => {
+import ContractManagementContent from "./ContractManagementContent";
+export default function LegittPro() {
   return (
     <div>
       <Helmet>
-        <title>About Us</title>
+        <title>Contract Management Software</title>
         <meta
           name="description"
           content="This page provides information about our website."
         />
       </Helmet>
-
-      <div>
-        <h1>About Us</h1>
-        <p>This page gives information about our website.</p>
-      </div>
+      <ContractManagementContent />
     </div>
   );
-};
-
-export default About;
+}

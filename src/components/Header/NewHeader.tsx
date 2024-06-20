@@ -31,13 +31,13 @@ const menuItems: Record<string, MenuItem> = {
                 Contract Management Software
               </a>
               <a
-                href="https://legittai.com/legitt-lite"
+                href="/legitt-lite"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 Legitt Lite
               </a>
               <a
-                href="https://legittai.com/legitt-pro"
+                href="/legitt-pro"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 Legitt Pro
