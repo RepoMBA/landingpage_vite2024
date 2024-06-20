@@ -10,7 +10,7 @@ export default function LegittProHeroSection() {
             <div className="w-full 1200sm:w-1/2 flex flex-col justify-center items-end">
               <div>
                 <h2 className="font-semibold text-[#000000]">Enterprise CLM</h2>
-                <p className="mt-2 text-[45px] font-bold tracking-tight text-gray-900">
+                <p className="mt-2 text-[45px] font-bold tracking-tight leading-[50px] text-gray-900">
                   Connect contract data across CLM
                 </p>
                 <p className="text-lg leading-8 text-gray-600">

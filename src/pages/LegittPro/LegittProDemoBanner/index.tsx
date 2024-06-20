@@ -32,7 +32,7 @@ export default function LegittProDemoBanner() {
       <div
         className={`relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32 rounded-4xl transition-all duration-500 ease-in-out ${
           isInView ? "mx-[10%]" : "mx-[4%]"
-        } mt-[-100px]`}
+        }`}
       >
         <div className="mx-auto max-w-[800px] px-6 lg:px-8">
           <div className="mx-auto flex flex-col justify-center items-center text-center max-w-2xl">

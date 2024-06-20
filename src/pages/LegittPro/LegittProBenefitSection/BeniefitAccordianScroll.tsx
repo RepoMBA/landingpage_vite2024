@@ -61,7 +61,7 @@ const BeniefitAccordianScroll: React.FC = () => {
   return (
     <div className="stack-area" ref={stackAreaRef}>
       <div className="left">
-        <div className="text-center font-semibold text-3xl w-full">
+        <div className="text-center mx-[6%] font-semibold text-3xl w-full">
           How can your team benefit from Legitt AI Pro?
         </div>
         <div className="ai-left-part h-[35vh] bg-transparent">
