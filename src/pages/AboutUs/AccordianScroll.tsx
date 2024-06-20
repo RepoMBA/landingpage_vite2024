@@ -52,13 +52,12 @@ const AccordianScroll: React.FC = () => {
   };
 
   return (
-    <div className="stack-area" ref={stackAreaRef}>
-
+    <div className="stack-area rounded-xl" ref={stackAreaRef}>
       <div className="left">
         <div className="ai-left-part">
           <div className="Tracking-constant-text ai-first">
             <h2 className="common-heading-text">
-            What makes Legitt AI the best of the lot?
+              What makes Legitt AI the best of the lot?
             </h2>
           </div>
           <div className="accordion" id="accordionExample">
@@ -78,9 +77,8 @@ const AccordianScroll: React.FC = () => {
                     <h3 className="accordion-heading-text">{item.heading}</h3>
 
                     <svg
-                      className={`w-3 h-3 ${
-                        activeIndex === index ? "rotate-[-90deg]" : "rotate-90"
-                      } transition-transform`}
+                      className={`w-3 h-3 ${activeIndex === index ? "rotate-[-90deg]" : "rotate-90"
+                        } transition-transform`}
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                       fill="#000000"
@@ -100,15 +98,25 @@ const AccordianScroll: React.FC = () => {
                 </div>
                 <div
                   id={`accordion-flush-body-${index + 1}`}
-                  className={`accordion-collapse py-[1rem] px-[1.25rem]  ${
-                    activeIndex === index ? "inherit" : "hidden"
-                  }`}
+                  className={`accordion-collapse py-[1rem] px-[1.25rem]  ${activeIndex === index ? "inherit" : "hidden"
+                    }`}
                   aria-labelledby={`accordion-flush-heading-${index + 1}`}
                 >
                   <div className="accordion-body">{item.body}</div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="right">
+        <div className="ai-right-part">
+          <div className="sticky top-0 h-full">
+            <img
+              src="https://d2qb2qddg7l6c6.cloudfront.net/assets/images/comp.png"
+              className="w-full h-full object-cover"
+              alt="Comp"
+            />
           </div>
         </div>
       </div>
@@ -136,3 +144,11 @@ const accordionItems = [
 ];
 
 export default AccordianScroll;
+
+<div className="w-1/2 sticky top-0 h-full items-center">
+  <img
+    src="https://d2qb2qddg7l6c6.cloudfront.net/assets/images/comp.png"
+    className="w-full"
+    alt="Comp"
+  />
+</div>
