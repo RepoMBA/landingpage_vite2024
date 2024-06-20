@@ -10,12 +10,12 @@ import Support from "../pages/Support";
 import Videos from "../pages/Videos";
 
 
+import LegittLite from "../pages/LegittLite";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
       {/* Company */}
       <Route path="/about-us" element={<AboutUs/>}/>
       <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
@@ -25,6 +25,7 @@ const AppRoutes = () => {
       {/* Resources */}
       <Route path="/support" element={<Support/>}/>
       <Route path="/videos" element={<Videos/>}/>
+      <Route path="/legitt-lite" element={<LegittLite />} />
     </Routes>
   );
 };
