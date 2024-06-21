@@ -7,6 +7,8 @@ import InvestWithUs from "../pages/InvestWithUs";
 import JobsAndCareer from "../pages/JobsAndCareer";
 import Support from "../pages/Support";
 import Videos from "../pages/Videos";
+import ReleaseNotes from "../pages/ReleaseNotes";
+import Error from "../pages/404";
 
 import LegittLite from "../pages/LegittLite";
 import ContractManagementSoftware from "../pages/ContractManagementSoftware";
@@ -29,7 +31,8 @@ const AppRoutes = () => {
       {/* Resources */}
       <Route path="/support" element={<Support />} />
       <Route path="/videos" element={<Videos />} />
-
+      <Route path="/release-notes" element={<ReleaseNotes/>}/>
+      
       {/* Products */}
       <Route path="/legitt-lite" element={<LegittLite />} />
       <Route path="/legitt-pro" element={<LegittPro />} />
@@ -44,6 +47,9 @@ const AppRoutes = () => {
       <Route path="/sales" element={<Sales />} />
       <Route path="/it" element={<IT />} />
       <Route path="/finance" element={<Finance />} />
+
+
+      <Route path="/error-404" element={<Error/>}/>
     </Routes>
   );
 };

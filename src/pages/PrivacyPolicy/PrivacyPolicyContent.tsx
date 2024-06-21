@@ -7,7 +7,7 @@ export default function PrivacyPolicyContent() {
         <div>
             <NewHeader />
             <div className="px-[120px] text-[#4e4d4c]">
-                <h1 className="mt-[80px] text-[24px] text-[#000] text-center"><b>Legitt Privacy Policy</b></h1>
+                <h1 className="mt-[80px] mb-6 text-[24px] text-[#000] text-center"><b>Legitt Privacy Policy</b></h1>
                 <h2><b>Personal Information</b></h2>
                 <p className="mb-[30px]">
                     Upepo Technology Labs Private Limited (referred as company) is the licensed owner of the brand Legitt, the website www.legittai.com and MS Word Office Plug in tool "Legitt AI Office Tools". Company respects your privacy. This privacy policy provides succinctly the manner your data is collected and used by Company on the Site. As a visitor to the site/ customer you are advised to please read the policy carefully. By accessing the services provided by the site you agree to the collection and use of your data by Company.
