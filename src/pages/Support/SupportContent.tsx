@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 import faqData from './faqData.json';
 
 interface FAQ {
@@ -38,7 +36,6 @@ const FAQContainer: React.FC = () => {
 const SupportContent: React.FC = () => {
     return (
         <div>
-            <NewHeader />
             <div className="mt-16 font-mono px-4 lg:px-0">
                 <div className="text-center">
                     <h1 className="text-4xl lg:text-5xl font-bold mb-4"><b>FAQs - Frequently Asked Questions</b></h1>
@@ -46,7 +43,6 @@ const SupportContent: React.FC = () => {
                 </div>
                 <FAQContainer />
             </div>
-            <Footer />
         </div>
     );
 };

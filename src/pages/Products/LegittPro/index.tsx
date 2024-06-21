@@ -25,7 +25,6 @@ export default function LegittPro() {
       <LegittProBenefitSection />
       <LegittProDemoBanner />
 
-      <Footer />
     </div>
   );
 }

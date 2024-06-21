@@ -7,7 +7,6 @@ import FinanceValueSection from "./FinanceValueSection";
 import FinanceTeamHelpSection from "./FinanceTeamHelpSection";
 import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import FinanceTeamResourcesSection from "./FinanceTeamResourcesSection";
-import Footer from "../../../../components/Footer";
 
 export default function Finance() {
   return (
@@ -26,7 +25,6 @@ export default function Finance() {
       <FinanceTeamHelpSection />
       <FinanceTeamResourcesSection />
       <LegittProDemoBanner />
-      <Footer />
     </div>
   );
 }

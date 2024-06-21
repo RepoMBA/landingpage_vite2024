@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import SalesforceHeroSection from "./SalesforceHeroSection";
 import SalesforceIntroVideoSection from "./SalesforceIntroVideoSection";
 import LegittExperienceWithSalesforce from "./LegittExperienceWithSalesforce";
-import Footer from "../../../../components/Footer";
 
 export default function Salesforce() {
   return (
@@ -20,7 +19,6 @@ export default function Salesforce() {
       <SalesforceHeroSection />
       <SalesforceIntroVideoSection />
       <LegittExperienceWithSalesforce />
-      <Footer />
     </div>
   );
 }

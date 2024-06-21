@@ -7,7 +7,6 @@ import LegalValueSection from "./LegalValueSection";
 import LegalTeamHelpSection from "./LegalTeamHelpSection";
 import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import LegalTeamResourcesSection from "./LegalTeamResourcesSection";
-import Footer from "../../../../components/Footer";
 
 export default function Legal() {
   return (
@@ -26,7 +25,6 @@ export default function Legal() {
       <LegalTeamHelpSection />
       <LegalTeamResourcesSection />
       <LegittProDemoBanner />
-      <Footer />
     </div>
   );
 }

@@ -1,11 +1,8 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 
 export default function PrivacyPolicyContent() {
     return (
         <div>
-            <NewHeader />
             <div className="px-[120px] text-[#4e4d4c]">
                 <h1 className="mt-[80px] mb-6 text-[24px] text-[#000] text-center"><b>Legitt Privacy Policy</b></h1>
                 <h2><b>Personal Information</b></h2>
@@ -41,7 +38,6 @@ export default function PrivacyPolicyContent() {
                 <a href="mailto:info@legittai.com" className="flex gap-1 items-center  text-[blue]"><svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2"><defs><style>.cls-1</style></defs><path className="cls-1" d="M6.47,10.71a2,2,0,0,0-2,2h0V35.32a2,2,0,0,0,2,2H41.53a2,2,0,0,0,2-2h0V12.68a2,2,0,0,0-2-2H6.47Zm33.21,3.82L24,26.07,8.32,14.53" /></svg>info@legittai.com</a>
                 <a href="https://www.legittai.com/" className="text-[blue]">Website: https://www.legittai.com</a>
             </div>
-            <Footer />
         </div>
     )
 }

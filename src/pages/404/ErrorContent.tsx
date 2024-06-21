@@ -1,11 +1,8 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 
 export default function ErrorContent() {
     return (
         <div className="flex flex-col min-h-screen">
-            <NewHeader />
             <div className="relative flex flex-col justify-center items-center flex-grow mt-8 md:mt-20">
                 <div className="relative w-full max-w-[90%] md:max-w-[1100px]">
                     <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" className="w-full" />
@@ -19,7 +16,6 @@ export default function ErrorContent() {
                     </button>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

@@ -7,7 +7,6 @@ import SmallBusinessSection from "../components/SmallBusinessSection";
 import BlogSection from "../components/BlogSection";
 import PartnersSection from "../components/PartnersSection";
 import DemoBannerSection from "../components/DemoBannerSection";
-import Footer from "../components/Footer";
 import ContractIntelligence from "../components/ContractIntelligenceSection";
 
 const Home: React.FC<{}> = () => {
@@ -31,7 +30,6 @@ const Home: React.FC<{}> = () => {
         <ValueSection />
         <PartnersSection />
         <DemoBannerSection />
-        <Footer />
       </div>
     </div>
   );

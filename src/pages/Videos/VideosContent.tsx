@@ -1,6 +1,4 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 import videosData from './videos.json';
 import { Video } from './types';
 
@@ -9,7 +7,6 @@ const VideosContent: React.FC = () => {
 
   return (
     <div>
-      <NewHeader />
       <div className="mt-16 px-4 lg:px-24"> {/* Adjusted top margin and horizontal padding */}
         <div className="bg-[#cecade] rounded-lg p-6 md:p-8"> {/* Adjusted padding */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -47,7 +44,6 @@ const VideosContent: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -26,7 +26,6 @@ export default function LegittLite() {
       <LegittLiteBenefitSection />
       <LegittLiteDemoBanner />
 
-      <Footer />
     </div>
   );
 }
