@@ -1,14 +1,14 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
+import NewHeader from "../../../../components/Header/NewHeader";
 import ITHeroSection from "./ITHeroSection";
 import { Helmet } from "react-helmet";
-import CustomersSection from "../../components/CustomersSection";
+import CustomersSection from "../../../../components/CustomersSection";
 import ITTestimonialSection from "./ITTestimonialSection";
 import ITValueSection from "./ITValueSection";
 import ITTeamHelpSection from "./ITTeamHelpSection";
-import LegittProDemoBanner from "../LegittPro/LegittProDemoBanner";
+import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import ITTeamResourcesSection from "./ITTeamResourcesSection";
-import Footer from "../../components/Footer";
+import Footer from "../../../../components/Footer";
 
 export default function IT() {
   return (

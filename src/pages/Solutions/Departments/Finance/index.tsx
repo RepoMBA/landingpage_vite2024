@@ -1,14 +1,14 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
+import NewHeader from "../../../../components/Header/NewHeader";
 import FinanceHeroSection from "./FinanceHeroSection";
 import { Helmet } from "react-helmet";
-import CustomersSection from "../../components/CustomersSection";
+import CustomersSection from "../../../../components/CustomersSection";
 import FinanceTestimonialSection from "./FinanceTestimonialSection";
 import FinanceValueSection from "./FinanceValueSection";
 import FinanceTeamHelpSection from "./FinanceTeamHelpSection";
-import LegittProDemoBanner from "../LegittPro/LegittProDemoBanner";
+import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import FinanceTeamResourcesSection from "./FinanceTeamResourcesSection";
-import Footer from "../../components/Footer";
+import Footer from "../../../../components/Footer";
 
 export default function Finance() {
   return (

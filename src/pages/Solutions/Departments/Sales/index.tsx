@@ -1,14 +1,14 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
+import NewHeader from "../../../../components/Header/NewHeader";
 import SalesHeroSection from "./SalesHeroSection";
 import { Helmet } from "react-helmet";
-import CustomersSection from "../../components/CustomersSection";
+import CustomersSection from "../../../../components/CustomersSection";
 import SalesTestimonialSection from "./SalesTestimonialSection";
 import SalesValueSection from "./SalesValueSection";
 import SalesTeamHelpSection from "./SalesTeamHelpSection";
-import LegittProDemoBanner from "../LegittPro/LegittProDemoBanner";
+import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import SalesTeamResourcesSection from "./SalesTeamResourcesSection";
-import Footer from "../../components/Footer";
+import Footer from "../../../../components/Footer";
 
 export default function Sales() {
   return (

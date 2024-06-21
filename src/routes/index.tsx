@@ -8,13 +8,13 @@ import JobsAndCareer from "../pages/JobsAndCareer";
 import Support from "../pages/Support";
 import Videos from "../pages/Videos";
 
-import LegittLite from "../pages/LegittLite";
-import ContractManagementSoftware from "../pages/ContractManagementSoftware";
-import LegittPro from "../pages/LegittPro";
-import Legal from "../pages/Legal";
-import Sales from "../pages/Sales";
-import IT from "../pages/IT";
-import Finance from "../pages/Finance";
+import LegittLite from "../pages/Products/LegittLite/index";
+import ContractManagementSoftware from "../pages/ContractManagementSoftware/index";
+import LegittPro from "../pages/Products/LegittPro/index";
+import Legal from "../pages/Solutions/Departments/Legal";
+import Sales from "../pages/Solutions/Departments/Sales";
+import IT from "../pages/Solutions/Departments/IT";
+import Finance from "../pages/Solutions/Departments/Finance";
 
 const AppRoutes = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import NewHeader from "../../components/Header/NewHeader";
-import ContractManagementHeroSection from "./ContractManagementHeroSection.tsx/index.tsx";
+import ContractManagementHeroSection from "./ContractManagementHeroSection/index.tsx";
 import ContractManagementKeyHighlightSection from "./ContractManagementKeyHighlightSection/index.tsx";
 import ContractManagmentFeaturesSection from "./ContractManagmentFeaturesSection/index.tsx";
 import ContractManagementIntegrationSection from "./ContractManagementIntegrationSection/index.tsx";
