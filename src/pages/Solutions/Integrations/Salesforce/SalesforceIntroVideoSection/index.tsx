@@ -3,12 +3,12 @@ import SampleSalesForceHeroImage from "../../../../../assets/images/SampleSalesf
 
 export default function SalesforceIntroVideoSection() {
   return (
-    <div>
+    <div className="px-4">
       <div className="flex justify-center items-center min-h-[80vh]">
         <img
           src={SampleSalesForceHeroImage}
           alt="SalesforceHeroImage"
-          className="w-[100%] max-w-[900px] object-cover object-center"
+          className="w-full max-w-[900px] object-cover object-center"
         />
       </div>
     </div>
