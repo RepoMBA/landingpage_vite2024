@@ -9,6 +9,7 @@ import JobsAndCareer from "../pages/JobsAndCareer";
 import Support from "../pages/Support";
 import Videos from "../pages/Videos";
 import ReleaseNotes from "../pages/ReleaseNotes";
+import Error from "../pages/404";
 
 
 
@@ -27,6 +28,7 @@ const AppRoutes = () => {
       <Route path="/support" element={<Support/>}/>
       <Route path="/videos" element={<Videos/>}/>
       <Route path="/release-notes" element={<ReleaseNotes/>}/>
+      <Route path="/error-404" element={<Error/>}/>
     </Routes>
   );
 };
