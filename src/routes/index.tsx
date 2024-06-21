@@ -8,6 +8,7 @@ import InvestWithUs from "../pages/InvestWithUs";
 import JobsAndCareer from "../pages/JobsAndCareer";
 import Support from "../pages/Support";
 import Videos from "../pages/Videos";
+import ReleaseNotes from "../pages/ReleaseNotes";
 
 
 
@@ -25,6 +26,7 @@ const AppRoutes = () => {
       {/* Resources */}
       <Route path="/support" element={<Support/>}/>
       <Route path="/videos" element={<Videos/>}/>
+      <Route path="/release-notes" element={<ReleaseNotes/>}/>
     </Routes>
   );
 };
