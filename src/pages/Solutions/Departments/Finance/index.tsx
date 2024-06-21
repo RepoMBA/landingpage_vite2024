@@ -1,5 +1,4 @@
 import React from "react";
-import NewHeader from "../../../../components/Header/NewHeader";
 import FinanceHeroSection from "./FinanceHeroSection";
 import { Helmet } from "react-helmet";
 import CustomersSection from "../../../../components/CustomersSection";
@@ -20,7 +19,6 @@ export default function Finance() {
           content="This page provides information about our website."
         />
       </Helmet>
-      <NewHeader />
       <FinanceHeroSection />
       <CustomersSection />
       <FinanceTestimonialSection />

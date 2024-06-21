@@ -132,7 +132,7 @@ const menuItems: Record<string, MenuItem> = {
             </div>
 
             <a
-              href="/"
+              href="/salesforce"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Salesforce
@@ -579,7 +579,7 @@ export default function NewHeader() {
                           </div>
 
                           <a
-                            href="/"
+                            href="/salesforce"
                             className="text-[14px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
                           >
                             Salesforce

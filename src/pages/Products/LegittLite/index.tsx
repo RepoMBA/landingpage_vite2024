@@ -1,5 +1,4 @@
 import React from "react";
-import NewHeader from "../../../components/Header/NewHeader";
 import Footer from "../../../components/Footer";
 import LegittLiteHeroSection from "./LegittLiteHeroSection";
 import CustomersSection from "../../../components/CustomersSection";
@@ -20,7 +19,6 @@ export default function LegittLite() {
         />
       </Helmet>
 
-      <NewHeader />
       <LegittLiteHeroSection />
       <CustomersSection />
       <LegittLiteTestimonialSection />

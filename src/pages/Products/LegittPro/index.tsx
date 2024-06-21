@@ -1,5 +1,4 @@
 import React from "react";
-import NewHeader from "../../../components/Header/NewHeader";
 import LegittProHeroSection from "./LegittProHeroSection";
 import CustomersSection from "../../../components/CustomersSection";
 import LegittProTestimonialSection from "./LegittProTestimonialSection";
@@ -18,7 +17,6 @@ export default function LegittPro() {
           content="This page provides information about our website."
         />
       </Helmet>
-      <NewHeader />
 
       <LegittProHeroSection />
       <CustomersSection />

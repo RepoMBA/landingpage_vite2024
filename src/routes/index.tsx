@@ -17,6 +17,7 @@ import Legal from "../pages/Solutions/Departments/Legal";
 import Sales from "../pages/Solutions/Departments/Sales";
 import IT from "../pages/Solutions/Departments/IT";
 import Finance from "../pages/Solutions/Departments/Finance";
+import Salesforce from "../pages/Solutions/Integrations/Salesforce";
 
 const AppRoutes = () => {
   return (
@@ -31,8 +32,8 @@ const AppRoutes = () => {
       {/* Resources */}
       <Route path="/support" element={<Support />} />
       <Route path="/videos" element={<Videos />} />
-      <Route path="/release-notes" element={<ReleaseNotes/>}/>
-      
+      <Route path="/release-notes" element={<ReleaseNotes />} />
+
       {/* Products */}
       <Route path="/legitt-lite" element={<LegittLite />} />
       <Route path="/legitt-pro" element={<LegittPro />} />
@@ -48,8 +49,9 @@ const AppRoutes = () => {
       <Route path="/it" element={<IT />} />
       <Route path="/finance" element={<Finance />} />
 
+      <Route path="salesforce" element={<Salesforce />} />
 
-      <Route path="/error-404" element={<Error/>}/>
+      <Route path="/error-404" element={<Error />} />
     </Routes>
   );
 };

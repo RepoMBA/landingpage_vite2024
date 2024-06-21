@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
 import HeroSection from "../components/HeroSection";
-import NewHeader from "../components/Header/NewHeader";
 import CustomersSection from "../components/CustomersSection";
 import ValueSection from "../components/ValueSection";
 import FeatureSection from "../components/FeatureSection";
@@ -23,7 +22,6 @@ const Home: React.FC<{}> = () => {
       </Helmet>
 
       <div className="">
-        <NewHeader />
         <HeroSection />
         <CustomersSection />
         <ContractIntelligence />
