@@ -1,5 +1,4 @@
 import React from "react";
-import NewHeader from "../../../../components/Header/NewHeader";
 import ITHeroSection from "./ITHeroSection";
 import { Helmet } from "react-helmet";
 import CustomersSection from "../../../../components/CustomersSection";
@@ -20,7 +19,6 @@ export default function IT() {
           content="This page provides information about our website."
         />
       </Helmet>
-      <NewHeader />
       <ITHeroSection />
       <CustomersSection />
       <ITTestimonialSection />
