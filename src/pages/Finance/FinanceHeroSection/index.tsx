@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ITHeroSection() {
+export default function FinanceHeroSection() {
   return (
     <div className="mt-[50px]">
       <div className="px-[4%] py-[4%] bg-[url('https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/LegalHeroImage.jpg')] bg-cover bg-center min-h-[70vh] flex items-center">

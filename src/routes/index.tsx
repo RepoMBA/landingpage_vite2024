@@ -14,6 +14,7 @@ import LegittPro from "../pages/LegittPro";
 import Legal from "../pages/Legal";
 import Sales from "../pages/Sales";
 import IT from "../pages/IT";
+import Finance from "../pages/Finance";
 
 const AppRoutes = () => {
   return (
@@ -42,6 +43,7 @@ const AppRoutes = () => {
       <Route path="/legal" element={<Legal />} />
       <Route path="/sales" element={<Sales />} />
       <Route path="/it" element={<IT />} />
+      <Route path="/finance" element={<Finance />} />
     </Routes>
   );
 };

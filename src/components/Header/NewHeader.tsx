@@ -101,25 +101,25 @@ const menuItems: Record<string, MenuItem> = {
               Departments
             </div>
             <a
-              href="/"
+              href="/legal"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Legal
             </a>
             <a
-              href="/"
+              href="/sales"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Sales
             </a>{" "}
             <a
-              href="/"
+              href="/it"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               IT
             </a>
             <a
-              href="/"
+              href="/finance"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Finance
@@ -355,7 +355,7 @@ export default function NewHeader() {
               <ul className="nav-ul flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li className="nav-li relative">
                   <a
-                    href="https://legittai.com/"
+                    href="/"
                     className="nav-a flex gap-1 items-center block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#9b0242] lg:p-0"
                   >
                     Home
