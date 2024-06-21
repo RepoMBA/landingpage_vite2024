@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import jobListings from './jobList.json';
-import CommonPopUp from "../../components/common/CommonPopUp.tsx";
+import CommonPopUp from "../../../components/common/CommonPopUp.tsx";
 
 interface JobListing {
   jobName: string;
