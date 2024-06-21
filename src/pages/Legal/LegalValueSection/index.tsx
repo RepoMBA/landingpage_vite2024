@@ -4,8 +4,8 @@ export default function LegalValueSection() {
   return (
     <div className="mt-12 px-6 md:px-12">
       <div className="text-3xl md:text-5xl leading-snug md:leading-tight text-left font-bold mb-12 heading-2 module-heading loaded">
-        Elevate legal’s strategic business impact with{" "}
-        <span className="headingunderline">AI-powered contract</span>
+        Elevate legal’s <span className="headingunderline">strategic</span>{" "}
+        business impact
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mb-12">
         <div className="bg-[#F8CDBE] text-white p-6 md:p-10 rounded-2xl md:rounded-[40px] flex flex-col justify-center items-start h-full">

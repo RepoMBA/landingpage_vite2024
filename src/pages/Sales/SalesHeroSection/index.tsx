@@ -3,7 +3,7 @@ import React from "react";
 export default function SalesHeroSection() {
   return (
     <div className="mt-[50px]">
-      <div className="px-[4%] py-[4%] bg-[url('https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/LegalHeroImage.jpg')] bg-cover bg-center min-h-[70vh] flex items-center">
+      <div className="px-[4%] py-[4%] bg-[url('https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/SalesHeroImage.jpg')] bg-cover bg-center min-h-[70vh] flex items-center">
         <div className="w-full md:w-2/3 lg:w-1/2 bg-white bg-opacity-80 1200sm:bg-transparent p-6 rounded-lg">
           <h2 className="font-semibold text-[#000000]">Sales</h2>
           <p className="mt-2 text-[28px] sm:text-[35px] md:text-[45px] font-bold tracking-tight leading-[35px] sm:leading-[40px] md:leading-[50px] text-[#000]">
