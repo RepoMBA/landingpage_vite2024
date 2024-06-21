@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import TermsAndConditions from "../pages/TermsAndConditions";
-import PrivacyPolicy from "../pages/PrivacyPolicy";
-import AboutUs from "../pages/AboutUs";
-import InvestWithUs from "../pages/InvestWithUs";
-import JobsAndCareer from "../pages/JobsAndCareer";
-import Support from "../pages/Support";
-import Videos from "../pages/Videos";
-import ReleaseNotes from "../pages/ReleaseNotes";
+import TermsAndConditions from "../pages/Company/TermsAndConditions";
+import PrivacyPolicy from "../pages/Company/PrivacyPolicy";
+import AboutUs from "../pages/Company/AboutUs";
+import InvestWithUs from "../pages/Company/InvestWithUs";
+import JobsAndCareer from "../pages/Company/JobsAndCareer";
+import Support from "../pages/Resources/Support";
+import Videos from "../pages/Resources/Videos";
+import ReleaseNotes from "../pages/Resources/ReleaseNotes";
 import Error from "../pages/404";
 
 import LegittLite from "../pages/Products/LegittLite/index";
