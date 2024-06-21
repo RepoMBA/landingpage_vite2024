@@ -1,5 +1,4 @@
 import React from "react";
-import './InvestWithUsContent.css'
 
 export default function InvestWithUsContent() {
     return (
@@ -30,7 +29,7 @@ export default function InvestWithUsContent() {
                     <div className="text-black lg:w-1/2 lg:ml-5">
                         <h1 className="text-[30px] md:text-[36px] font-bold">What are we <span className="text-[#9b0242]">building</span> and why?</h1>
                         <p className="text-[#6e6e6e]">Legitt is a unique assistive platform to collaborate and create agreements, contracts, and other legally binding business documents from scratch or using open AI, manage (including the signing process), and track their status during and after signing. Business documents can be published as smart contracts on the blockchain. Legitt allows you to upload your existing contracts, manage, and track them.</p>
-                        <ul className="mb-4 mt-6 max-w-2xl text-left list-disc list-inside custom-list">
+                        <ul className="mb-4 mt-6 max-w-2xl text-left list-disc list-inside">
                             <li className="mb-2">Create or upload contracts from scratch</li>
                             <li className="mb-2">Manage and track contracts effortlessly</li>
                             <li className="mb-2">Get a quick summary of contracts with just a few clicks</li>
@@ -38,6 +37,17 @@ export default function InvestWithUsContent() {
                             <li className="mb-2">Request or receive payments securely on the blockchain</li>
                             <li className="mb-2">Specially designed for small and mid-sized teams</li>
                         </ul>
+
+                        <dt className="inline font-semibold text-gray-900">
+                    <img
+                      src="https://d2qb2qddg7l6c6.cloudfront.net/assets/images/bullet-check.png"
+                      alt="bullet-check"
+                      className="absolute left-1 top-1 h-5 w-5"
+                    />
+                  </dt>
+                  <dd className="inline">
+                  Create or upload contracts from scratch
+                  </dd>
                         <a href="https://www.youtube.com/watch?v=S98EB8cI_sY">
                             <button className="px-4 py-2 bg-[#9b0242] text-white rounded-lg">Watch Now</button>
                         </a>
