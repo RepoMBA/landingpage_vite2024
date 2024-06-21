@@ -1,7 +1,10 @@
 import React from "react";
 
 import { Helmet } from "react-helmet";
-import NewHeader from "../../../../components/Header/NewHeader";
+import SalesforceHeroSection from "./SalesforceHeroSection";
+import SalesforceIntroVideoSection from "./SalesforceIntroVideoSection";
+import LegittExperienceWithSalesforce from "./LegittExperienceWithSalesforce";
+import Footer from "../../../../components/Footer";
 
 export default function Salesforce() {
   return (
@@ -14,7 +17,10 @@ export default function Salesforce() {
           content="This page provides information about our website."
         />
       </Helmet>
-      <NewHeader />
+      <SalesforceHeroSection />
+      <SalesforceIntroVideoSection />
+      <LegittExperienceWithSalesforce />
+      <Footer />
     </div>
   );
 }
