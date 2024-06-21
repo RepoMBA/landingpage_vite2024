@@ -39,10 +39,10 @@ const SupportContent: React.FC = () => {
     return (
         <div>
             <NewHeader />
-            <div className="mt-16 font-mono px-4 lg:px-0"> {/* Padding adjusted for responsiveness */}
+            <div className="mt-16 font-mono px-4 lg:px-0">
                 <div className="text-center">
-                    <h1 className="text-4xl lg:text-5xl font-bold mb-4"><b>FAQs - Frequently Asked Questions</b></h1> {/* Adjusted text sizes */}
-                    <p className="text-lg lg:text-xl">Here are the answers to some of the most frequently asked questions about our work.</p> {/* Adjusted text sizes */}
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-4"><b>FAQs - Frequently Asked Questions</b></h1>
+                    <p className="text-lg lg:text-xl">Here are the answers to some of the most frequently asked questions about our work.</p>
                 </div>
                 <FAQContainer />
             </div>
