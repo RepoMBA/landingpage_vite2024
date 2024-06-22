@@ -20,6 +20,7 @@ import Finance from "../pages/Solutions/Departments/Finance";
 import Salesforce from "../pages/Solutions/Integrations/Salesforce";
 import MicrosoftDynamicsHeroSection from "../pages/Solutions/Integrations/MicrosoftDynamics/MicrosoftDynamicsHeroSection";
 import MicrosoftDynamics from "../pages/Solutions/Integrations/MicrosoftDynamics";
+import ZohoAndQuickbook from "../pages/Solutions/Integrations/ZohoAndQuickbook";
 
 const AppRoutes = () => {
   return (
@@ -53,6 +54,7 @@ const AppRoutes = () => {
 
       <Route path="salesforce" element={<Salesforce />} />
       <Route path="microsoft-dynamics" element={<MicrosoftDynamics />} />
+      <Route path="zoho-quickbooks" element={<ZohoAndQuickbook />} />
 
       <Route path="/error-404" element={<Error />} />
     </Routes>
