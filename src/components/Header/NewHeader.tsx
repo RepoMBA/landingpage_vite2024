@@ -138,22 +138,16 @@ const menuItems: Record<string, MenuItem> = {
               Salesforce
             </a>
             <a
-              href="/"
+              href="/microsoft-dynamics"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Microsoft Dynamics
             </a>
             <a
-              href="/"
+              href="/zoho-quickbooks"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
-              Zoho
-            </a>
-            <a
-              href="/"
-              className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
-            >
-              Quickbook
+              Zoho & Quickbook
             </a>
           </div>
         </div>
