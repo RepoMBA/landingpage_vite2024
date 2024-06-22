@@ -1,5 +1,4 @@
 import React from "react";
-import LegittProHeroImage from "../../../assets/images/LegittProHeroImage.png";
 
 export default function ContractManagementHeroSection() {
   return (
@@ -21,7 +20,7 @@ export default function ContractManagementHeroSection() {
         </div>
         <div className="w-full 1200sm:w-1/2 flex justify-center 1200sm:justify-end">
           <img
-            src={LegittProHeroImage}
+            src="https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/LegittProHeroImage.png"
             alt="Legitt Pro Hero"
             className="w-[500px] 1200sm:w-[70%] object-contain"
           />
