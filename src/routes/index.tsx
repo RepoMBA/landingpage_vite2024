@@ -18,6 +18,8 @@ import Sales from "../pages/Solutions/Departments/Sales";
 import IT from "../pages/Solutions/Departments/IT";
 import Finance from "../pages/Solutions/Departments/Finance";
 import Salesforce from "../pages/Solutions/Integrations/Salesforce";
+import MicrosoftDynamicsHeroSection from "../pages/Solutions/Integrations/MicrosoftDynamics/MicrosoftDynamicsHeroSection";
+import MicrosoftDynamics from "../pages/Solutions/Integrations/MicrosoftDynamics";
 
 const AppRoutes = () => {
   return (
@@ -50,6 +52,7 @@ const AppRoutes = () => {
       <Route path="/finance" element={<Finance />} />
 
       <Route path="salesforce" element={<Salesforce />} />
+      <Route path="microsoft-dynamics" element={<MicrosoftDynamics />} />
 
       <Route path="/error-404" element={<Error />} />
     </Routes>
