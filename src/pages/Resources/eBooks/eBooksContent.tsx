@@ -1,7 +1,5 @@
 import React from "react";
 import eBooksDetails from "./eBooksDetails.json";
-import { FaFilePdf } from "react-icons/fa";
-
 const eBooksContent: React.FC = () => {
   return (
     <div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -17,7 +15,7 @@ const eBooksContent: React.FC = () => {
                     <p><strong>Published on:</strong> {ebook.Publish}</p>
                   </div>
                   <a href={ebook.DownloadLink} className="text-red-500 hover:text-red-700 flex items-center" target="_blank" rel="noopener noreferrer">
-                    <FaFilePdf className="ml-1 h-6 w-6" />
+                    <img src="src/assets/images/pdfDownloadIcon.png" className="w-9 h-9"/>
                   </a>
                 </div>
                 <div>

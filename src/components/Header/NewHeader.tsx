@@ -259,7 +259,7 @@ const menuItems: Record<string, MenuItem> = {
                 href="https://legittai.com/demo"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
-                Schedule A Demo
+                Get A Demo
               </a>
               <a
                 href="/invest"
@@ -344,7 +344,7 @@ export default function NewHeader() {
                 href="https://legittai.com/demo"
                 className="common-button hidden lg:flex justify-between items-center w-full lg:flex lg:w-auto lg:order-1 "
               >
-                Schedule A Demo
+                Get A Demo
               </a>
               <button
                 data-collapse-toggle="mobile-menu-2"
@@ -695,7 +695,7 @@ export default function NewHeader() {
                             href="https://legittai.com/demo"
                             className="text-[14px] pl-[20px]  hover:text-[#9b0242] py-[5px] cursor-pointer"
                           >
-                            Schedule A Demo
+                            Get A Demo
                           </a>
                         </div>
                       </ListItem>
@@ -724,7 +724,7 @@ export default function NewHeader() {
               href="https://legittai.com/demo"
               className="common-button text-center justify-between items-center w-full lg:flex lg:w-auto lg:order-1 "
             >
-              Schedule A Demo
+              Get A Demo
             </a>
           </div>
         </div>

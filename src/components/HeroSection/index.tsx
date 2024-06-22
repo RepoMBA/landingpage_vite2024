@@ -29,7 +29,7 @@ export default function HeroSection() {
             className="bg-[#fff] border-[1.5px] w-[300px] border-[#717171] rounded-md text-black px-3 py-2 text-base hover:border-[#000] cursor-pointer transition placeholder-[12px]"
             type="text"
           />
-          <button className="common-button">Schedule A Demo</button>
+          <button className="common-button">Get A Demo</button>
         </div>
       </div>
       <div className="w-full 1171sm:w-1/2 mt-[20px] 1171sm:mt-[0px]  flex flex-col 1171sm:items-end gap-[40px] items-center">

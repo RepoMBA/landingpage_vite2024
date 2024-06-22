@@ -41,7 +41,7 @@ export default function LegittLiteDemoBanner() {
                 Talk to our experts
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-300">
-                Unlock the power of our product—schedule a demo today and
+                Unlock the power of our product—Get A Demo today and
                 transform possibilities into results!
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">

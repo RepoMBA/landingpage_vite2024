@@ -125,7 +125,7 @@ export default function AboutUsContent() {
           </p>
           <a href="https://legittai.com/demo">
             <button className="px-6 py-2 bg-[#9b0242] text-white rounded-lg">
-              Schedule a Demo
+              Get A Demo
             </button>
           </a>
         </div>

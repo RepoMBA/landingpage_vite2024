@@ -263,7 +263,7 @@ export default function Footer() {
                       href="#"
                     >
                       {" "}
-                      Schedule A Demo
+                      Get A Demo
                     </a>
                   </li>
 
