@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import TermsAndConditions from "../pages/TermsAndConditions";
-import PrivacyPolicy from "../pages/PrivacyPolicy";
-import AboutUs from "../pages/AboutUs";
-import InvestWithUs from "../pages/InvestWithUs";
-import JobsAndCareer from "../pages/JobsAndCareer";
-import Support from "../pages/Support";
-import Videos from "../pages/Videos";
-import ReleaseNotes from "../pages/ReleaseNotes";
+import TermsAndConditions from "../pages/Company/TermsAndConditions";
+import PrivacyPolicy from "../pages/Company/PrivacyPolicy";
+import AboutUs from "../pages/Company/AboutUs";
+import InvestWithUs from "../pages/Company/InvestWithUs";
+import JobsAndCareer from "../pages/Company/JobsAndCareer";
+import Support from "../pages/Resources/Support";
+import Videos from "../pages/Resources/Videos";
+import ReleaseNotes from "../pages/Resources/ReleaseNotes";
 import Error from "../pages/404";
 
 import LegittLite from "../pages/Products/LegittLite/index";
@@ -18,6 +18,8 @@ import Sales from "../pages/Solutions/Departments/Sales";
 import IT from "../pages/Solutions/Departments/IT";
 import Finance from "../pages/Solutions/Departments/Finance";
 import Salesforce from "../pages/Solutions/Integrations/Salesforce";
+import MicrosoftDynamicsHeroSection from "../pages/Solutions/Integrations/MicrosoftDynamics/MicrosoftDynamicsHeroSection";
+import MicrosoftDynamics from "../pages/Solutions/Integrations/MicrosoftDynamics";
 
 const AppRoutes = () => {
   return (
@@ -50,6 +52,7 @@ const AppRoutes = () => {
       <Route path="/finance" element={<Finance />} />
 
       <Route path="salesforce" element={<Salesforce />} />
+      <Route path="microsoft-dynamics" element={<MicrosoftDynamics />} />
 
       <Route path="/error-404" element={<Error />} />
     </Routes>
