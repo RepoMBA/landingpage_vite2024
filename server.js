@@ -35,7 +35,7 @@ async function createServer() {
             <style>
               #root { display: none; }
             </style>
-            <script defer src="https://cdn.tailwindcss.com"></script>
+           
           </head>
           <body>
             <div id="root">${appHtml}</div>
