@@ -168,13 +168,13 @@ const menuItems: Record<string, MenuItem> = {
           <div className="p-1 flex w-[200px] flex-col gap-2 col-span-1">
             {" "}
             <a
-              href="/"
+              href="/glossary"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
-              Glosary
+              Glossary
             </a>
             <a
-              href=""
+              href="/ebooks"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               eBooks
@@ -186,13 +186,13 @@ const menuItems: Record<string, MenuItem> = {
               White Papers
             </a>
             <a
-              href="https://legittai.com/release-notes"
+              href="/release-notes"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Release Notes
             </a>
             <a
-              href="https://legittai.com/videos"
+              href="/videos"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               Videos
@@ -232,19 +232,25 @@ const menuItems: Record<string, MenuItem> = {
             <div className="p-1 flex flex-col gap-2">
               {" "}
               <a
-                href="https://legittai.com/about-us"
+                href="/about-us"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 About Us
               </a>
               <a
-                href="https://legittai.com/privacy-policy"
+                href="/privacy-policy"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 Privacy Policy
               </a>
               <a
-                href="https://legittai.com/job-list"
+                href="/terms-and-conditions"
+                className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+              >
+                Terms and Conditions
+              </a>
+              <a
+                href="/job-list"
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 Jobs & Careers
@@ -254,6 +260,12 @@ const menuItems: Record<string, MenuItem> = {
                 className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
               >
                 Schedule A Demo
+              </a>
+              <a
+                href="/invest"
+                className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
+              >
+                Invest With Us
               </a>
             </div>
           </div>

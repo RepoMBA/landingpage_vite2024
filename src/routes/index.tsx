@@ -18,6 +18,8 @@ import Sales from "../pages/Solutions/Departments/Sales";
 import IT from "../pages/Solutions/Departments/IT";
 import Finance from "../pages/Solutions/Departments/Finance";
 import Salesforce from "../pages/Solutions/Integrations/Salesforce";
+import Glossary from "../pages/Resources/Glossary";
+import EBooks from "../pages/Resources/eBooks";
 
 const AppRoutes = () => {
   return (
@@ -33,6 +35,8 @@ const AppRoutes = () => {
       <Route path="/support" element={<Support />} />
       <Route path="/videos" element={<Videos />} />
       <Route path="/release-notes" element={<ReleaseNotes />} />
+      <Route path="/glossary" element={<Glossary />} />
+      <Route path="/ebooks" element={<EBooks />} />
 
       {/* Products */}
       <Route path="/legitt-lite" element={<LegittLite />} />

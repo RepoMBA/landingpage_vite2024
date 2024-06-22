@@ -1,0 +1,38 @@
+[
+    {
+      "Title": "Title1",
+      "Author": "Author1",
+      "Publish": "10/03/24",
+      "DownloadLink": "http://www.google.com",
+      "Summary": "Harry had a thin face, knobbly knees, black hair and bright-green eyes. He wore round glasses held together with a lot of Sellotape because of all the times Dudley had punched him on the nose. The only thing Harry liked about his own appearance was a very thin scar on his forehead which was shaped like a bolt of lightning. He had had it as long as he could remember and the first question he could ever remember asking his Aunt Petunia was how he had got it."
+    },
+    {
+      "Title": "Title2",
+      "Author": "Author2",
+      "Publish": "Date1",
+      "DownloadLink": "http://www.google.com",
+      "Summary": "Details for the book 2. This is another summary that will be truncated after two lines."
+    },
+    {
+      "Title": "Title3",
+      "Author": "Author3",
+      "Publish": "Date2",
+      "DownloadLink": "http://www.google.com",
+      "Summary": "Details for the book 3. This is another summary that will be truncated after two lines."
+    },
+    {
+      "Title": "Title4",
+      "Author": "Author4",
+      "Publish": "Date3",
+      "DownloadLink": "http://www.google.com",
+      "Summary": "Details for the book 4. This is another summary that will be truncated after two lines."
+    },
+    {
+      "Title": "Title5",
+      "Author": "Author5",
+      "Publish": "Date4",
+      "DownloadLink": "http://www.google.com",
+      "Summary": "Details for the book 5. This is another summary that will be truncated after two lines."
+    }
+  ]
+  

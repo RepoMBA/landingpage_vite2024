@@ -300,6 +300,15 @@ export default function Footer() {
                       Support
                     </a>
                   </li>
+
+                  <li>
+                    <a
+                      className="text-gray-700 transition hover:text-gray-700/75"
+                      href="/release-notes"
+                    >
+                      Release Notes
+                    </a>
+                  </li>
                 </ul>
               </div>
 
