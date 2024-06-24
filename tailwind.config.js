@@ -22,6 +22,7 @@ export default {
         "4xl": "2rem",
       },
       screens: {
+        "600sm": "600px",
         "700sm": "700px",
         "800sm": "800px",
         "968sm": "968px",
@@ -51,7 +52,7 @@ export default {
         ".headingunderline::before": {
           content: '""',
           position: "absolute",
-          width: "210px", // Default width
+          width: "100%", // Default width
           height: "0.4em",
           bottom: "4px",
           left: "-0.15em",
