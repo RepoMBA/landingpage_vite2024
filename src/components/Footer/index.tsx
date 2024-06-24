@@ -263,7 +263,7 @@ export default function Footer() {
                       href="#"
                     >
                       {" "}
-                      Schedule A Demo
+                      Get A Demo
                     </a>
                   </li>
 
@@ -298,6 +298,15 @@ export default function Footer() {
                       href="/support"
                     >
                       Support
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-gray-700 transition hover:text-gray-700/75"
+                      href="/release-notes"
+                    >
+                      Release Notes
                     </a>
                   </li>
                 </ul>

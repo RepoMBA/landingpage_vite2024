@@ -95,7 +95,7 @@ export default function SmallBusinessSection() {
                   href="#"
                   className="text-sm font-semibold leading-6 text-gray-700"
                 >
-                  Schedule a demo
+                  Get A Demo
                   <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -219,7 +219,7 @@ export default function SmallBusinessSection() {
                   href="#"
                   className="text-sm font-semibold leading-6 text-gray-700"
                 >
-                  Schedule a demo
+                  Get A Demo
                   <span aria-hidden="true">→</span>
                 </a>
               </div>

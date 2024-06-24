@@ -14,7 +14,7 @@ export default function DemoBannerSection() {
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
                 <button type="submit" className="common-button">
-                  Schedule A Demo
+                  Get A Demo
                 </button>
               </div>
             </div>
