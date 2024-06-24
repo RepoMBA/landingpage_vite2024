@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 import releaseNotes from './releasenotes.json';
 
 interface Release {
@@ -46,7 +44,6 @@ export default function ReleaseNotesContent() {
 
     return (
         <div>
-            <NewHeader />
             <div className="flex items-center justify-center">
                 <div className="mt-[100px] m-2 shadow-xl w-full max-w-5xl px-[3px] border-[2px]">
                     <h1 className="font-bold m-2 text-[32px] sm:text-[48px] ml-3">Release Notes</h1>
@@ -103,7 +100,6 @@ export default function ReleaseNotesContent() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

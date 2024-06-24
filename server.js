@@ -32,14 +32,22 @@ async function createServer() {
             ${helmet.meta.toString()}
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
+            <style>
+              #root { display: none; }
+            </style>
+           
           </head>
           <body>
             <div id="root">${appHtml}</div>
             <script type="module" src="/src/entry-client.tsx"></script>
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("root").style.display = "block";
+              });
+            </script>
           </body>
         </html>
-      `;
+        `;
 
       res.status(200).set({ "Content-Type": "text/html" }).end(html);
     } catch (e) {

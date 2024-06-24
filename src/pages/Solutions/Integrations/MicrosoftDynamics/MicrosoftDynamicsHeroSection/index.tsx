@@ -1,6 +1,7 @@
 import React from "react";
+import MicrosoftDynamicsHeroImage from "../../../../../assets/images/MicrosoftDynamicsHeroImage.png";
 
-export default function SalesforceHeroSection() {
+export default function MicrosoftDynamicsHeroSection() {
   return (
     <div className="mt-[50px]">
       <div className="min-h-[90vh] flex flex-col-reverse lg:flex-row items-center justify-between w-full">
@@ -9,7 +10,7 @@ export default function SalesforceHeroSection() {
             Legitt AI Contract Intelligence Integrations{" "}
           </h2>
           <p className="mt-2 text-[28px] sm:text-[35px] md:text-[45px] font-bold tracking-tight leading-[35px] sm:leading-[40px] md:leading-[50px] text-[#000]">
-            Legitt AI Contract Intelligence Integration with Salesforce
+            Legitt AI Contract Intelligence Integration with Microsoft Dynamics
           </p>
           <div className="mt-4 text-[#5d5d5d] text-[18px] sm:text-[20px] md:text-[18px] leading-[30px]">
             With our contract management integrations, your teams can create,
@@ -23,8 +24,8 @@ export default function SalesforceHeroSection() {
         </div>
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <img
-            src="https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/SalesForceHeroImage.png"
-            alt="SalesforceHeroImage"
+            src={MicrosoftDynamicsHeroImage}
+            alt="MicrosoftDynamicsHeroImage"
             className="w-[90%] object-cover object-center"
           />
         </div>

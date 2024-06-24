@@ -1,12 +1,9 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 import './InvestWithUsContent.css'
 
 export default function InvestWithUsContent() {
     return (
         <div>
-            <NewHeader />
             <div className="px-4 sm:px-6 md:px-8 lg:px-[6%] mt-12">
                 <div className="text-[#4e4d4c] flex flex-col lg:flex-row gap-4 lg:gap-[2px] justify-between items-center">
                     <div className="text-black lg:w-1/2">
@@ -91,7 +88,6 @@ export default function InvestWithUsContent() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

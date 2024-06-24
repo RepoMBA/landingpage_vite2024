@@ -1,11 +1,8 @@
 import React from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 
 export default function TermsAndConditionContent() {
   return (
     <div>
-      <NewHeader />
       <div className="px-4 sm:px-6 md:px-12 lg:px-20 xl:px-[130px] mt-[100px] text-[#4e4d4c]">
         <h1 className="text-[24px] text-[#000] text-center font-bold">
           Legitt Terms & Conditions
@@ -106,7 +103,6 @@ export default function TermsAndConditionContent() {
           You agree that you will defend Onitt/Legitt against claims or proceedings alleging that Data or our transmission or hosting thereof infringes or violates the rights of a third party or violates data privacy or protection laws, and you agree to indemnify Onitt/Legitt against damages and costs (including reasonable attorneys’ fees) finally awarded by a court of competent jurisdiction or in a settlement of the claim approved in writing by you.
         </p>
       </div>
-      <Footer />
     </div>
   );
 }

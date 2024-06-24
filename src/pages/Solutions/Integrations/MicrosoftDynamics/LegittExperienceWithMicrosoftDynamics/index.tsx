@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function LegittExperienceWithSalesforce() {
+export default function LegittExperienceWithMicrosoftDynamics() {
   return (
     <div className="px-[4%]">
       <section className="bg-[#F0F0EC] rounded-[20px] py-8 px-4 lg:py-16 lg:px-12 mb-[50px]">
@@ -15,18 +15,19 @@ export default function LegittExperienceWithSalesforce() {
             </span>
           </a>
           <h1 className="mb-4 text-4xl font-semibold tracking-tight leading-none text-gray-900 md:text-[36px] lg:text-5xl lg:mb-6">
-            For Salesforce
+            For Microsoft Dynamics
           </h1>
           <p className="mb-8 text-lg font-normal text-[#000] lg:text-[18px] sm:px-16 xl:px-48">
-            If your Salesforce implementation isn’t integrated with a robust
-            contract management platform, you aren’t taking full advantage of
-            the benefits offered by either system.
+            If your Microsoft Dynamics implementation isn’t integrated with a
+            robust contract management platform, you aren’t taking full
+            advantage of the benefits offered by either system.
           </p>
           <p className="mb-8 text-lg font-normal text-[#000] lg:text-[18px] sm:px-16 xl:px-48">
-            With Icertis Experience for Salesforce, your sales team can create,
-            view, approve and collaborate on contracts within Salesforce to
-            provide a seamless lead-to-contract process without imposing
-            additional administrative burdens on the sales user.
+            With Legitt AI Experience for Microsoft Dynamics, your sales team
+            can create, view, approve and collaborate on contracts within
+            Microsoft Dynamics to provide a seamless lead-to-contract process
+            without imposing additional administrative burdens on the sales
+            user.
           </p>
         </div>
       </section>
@@ -39,18 +40,18 @@ export default function LegittExperienceWithSalesforce() {
               <span className="text-[#9B0242]"> Works</span>
             </h1>
             <p className="mt-3 text-lg text-gray-800">
-              The ICI Experience for Salesforce utilizes the Icertis Contract
-              Intelligence Lightning Ready Salesforce app available on the
-              Salesforce AppExchange.
+              The ICI Experience for Microsoft Dynamics utilizes the Icertis
+              Contract Intelligence Lightning Ready Microsoft Dynamics app
+              available on the Microsoft Dynamics AppExchange.
             </p>
           </div>
 
           <div className="w-full lg:w-[60%] flex justify-center">
             <div>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                This app allows Salesforce <br /> customers and users to access
-                the Legitt AI platform’s functionality from within Salesforce
-                to:
+                This app allows Microsoft Dynamics <br /> customers and users to
+                access the Legitt AI platform’s functionality from within
+                Microsoft Dynamics to:
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {[

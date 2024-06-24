@@ -1,5 +1,4 @@
 import React from "react";
-import LegittProHeroImage from "../../../assets/images/LegittProHeroImage.png";
 
 export default function LegittProHeroSection() {
   return (

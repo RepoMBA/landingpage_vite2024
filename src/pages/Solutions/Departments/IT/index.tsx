@@ -7,7 +7,6 @@ import ITValueSection from "./ITValueSection";
 import ITTeamHelpSection from "./ITTeamHelpSection";
 import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import ITTeamResourcesSection from "./ITTeamResourcesSection";
-import Footer from "../../../../components/Footer";
 
 export default function IT() {
   return (
@@ -26,7 +25,6 @@ export default function IT() {
       <ITTeamHelpSection />
       <ITTeamResourcesSection />
       <LegittProDemoBanner />
-      <Footer />
     </div>
   );
 }

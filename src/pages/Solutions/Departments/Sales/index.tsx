@@ -7,7 +7,6 @@ import SalesValueSection from "./SalesValueSection";
 import SalesTeamHelpSection from "./SalesTeamHelpSection";
 import LegittProDemoBanner from "../../../Products/LegittPro/LegittProDemoBanner/index";
 import SalesTeamResourcesSection from "./SalesTeamResourcesSection";
-import Footer from "../../../../components/Footer";
 
 export default function Sales() {
   return (
@@ -26,7 +25,6 @@ export default function Sales() {
       <SalesTeamHelpSection />
       <SalesTeamResourcesSection />
       <LegittProDemoBanner />
-      <Footer />
     </div>
   );
 }

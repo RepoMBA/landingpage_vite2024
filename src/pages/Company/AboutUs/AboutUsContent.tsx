@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import NewHeader from "../../components/Header/NewHeader";
-import Footer from "../../components/Footer/index";
 import AccordianScroll from "./AccordianScroll";
 
 export default function AboutUsContent() {
   return (
     <div>
-      <NewHeader />
       <div className="px-[6%] mt-[50px]">
         <div className="text-[#4e4d4c] flex flex-col lg:flex-row lg:gap-[2px] justify-between items-center">
           <div className="lg:w-1/2">
@@ -132,8 +129,6 @@ export default function AboutUsContent() {
             </button>
           </a>
         </div>
-
-        <Footer />
       </div>
     </div>
   );

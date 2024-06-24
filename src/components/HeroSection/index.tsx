@@ -1,5 +1,3 @@
-import ConnectingLine from "../../assets/images/ConnectingLine.svg";
-import ConnectingLineTwo from "../../assets/images/ConnectingLineTwo.svg";
 export default function HeroSection() {
   return (
     <div className="mt-[75px] flex flex-col gap-[5px] px-[4%] min-h-[80vh] justify-center items-center 1171sm:flex-row ">
@@ -39,7 +37,10 @@ export default function HeroSection() {
               Sales Intelligence{" "}
             </div>
             <div className="700sm:flex hidden">
-              <img src={ConnectingLine} alt="Connecting Line" />
+              <img
+                src="https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/ConnectingLine.svg"
+                alt="Connecting Line"
+              />
             </div>
           </div>
 
@@ -108,7 +109,7 @@ export default function HeroSection() {
             </div>
             <div className="700sm:flex hidden">
               <img
-                src={ConnectingLineTwo}
+                src="https://d2qb2qddg7l6c6.cloudfront.net/legitt-website-v5/assets/images/ConnectingLineTwo.svg"
                 alt="Connecting Line"
                 className="mt-[16px]"
               />
