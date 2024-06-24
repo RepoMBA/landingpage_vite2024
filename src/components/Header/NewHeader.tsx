@@ -180,7 +180,7 @@ const menuItems: Record<string, MenuItem> = {
               eBooks
             </a>{" "}
             <a
-              href=""
+              href="/white-papers"
               className="text-[14px] hover:text-[#9b0242] py-[5px] cursor-pointer"
             >
               White Papers

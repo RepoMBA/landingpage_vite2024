@@ -1,5 +1,6 @@
 import React from "react";
 import eBooksDetails from "./eBooksDetails.json";
+
 const eBooksContent: React.FC = () => {
   return (
     <div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -1,0 +1,38 @@
+[
+  {
+    "image_link": "https://www.zycus.com/wp-content/uploads/2024/04/navigating-whitepaper.webp",
+    "Title": "Title1",
+    "Summary": "Details for the tile 1. This is another summary that will be truncated after two lines.",
+    "Description": "abcdefghijklmnopqrstuvwxyz",
+    "redirectLink":"/white-papers/title1"
+  },
+  {
+    "image_link": "https://www.zycus.com/wp-content/uploads/2024/04/navigating-whitepaper.webp",
+    "Title": "Title2",
+    "Summary": "Details for the tile 2. This is another summary that will be truncated after two lines.",
+    "Description": "abcdefghijklmnopqrstuvwxyz",
+    "redirectLink":"/white-papers/title2"
+  },
+  {
+    "image_link": "https://www.zycus.com/wp-content/uploads/2024/04/navigating-whitepaper.webp",
+    "Title": "Title3",
+    "Summary": "Details for the tile 3. This is another summary that will be truncated after two lines.",
+    "Description": "abcdefghijklmnopqrstuvwxyz",
+    "redirectLink":"/white-papers/title3"
+  },
+  {
+    "image_link": "https://www.zycus.com/wp-content/uploads/2024/04/navigating-whitepaper.webp",
+    "Title": "Title4",
+    "Summary": "Details for the tile 4. This is another summary that will be truncated after two lines.",
+    "Description": "abcdefghijklmnopqrstuvwxyz",
+    "redirectLink":"/white-papers/title4"
+  },
+  {
+    "image_link": "https://www.zycus.com/wp-content/uploads/2024/04/navigating-whitepaper.webp",
+    "Title": "Title5",
+    "Summary": "Details for the tile 5. This is another summary that will be truncated after two lines.",
+    "Description": "abcdefghijklmnopqrstuvwxyz",
+    "redirectLink":"/white-papers/title5"
+    
+  }
+]

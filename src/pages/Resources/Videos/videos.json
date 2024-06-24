@@ -18,20 +18,20 @@
 },
 {
   "_id": {
+    "$oid": "644236eec0cb8d55bc706c2d"
+  },
+  "video_id": "F03TfkC5oNo",
+  "title": "Legitt AI Repo Analyser | Analyse Contracts with AI | Create Actionable Insights",
+  "desc": "Discover Legitt AI Repo Analyser – the ultimate tool for contract management",
+  "category": "Info"
+},
+{
+  "_id": {
     "$oid": "64423645c0cb8d55bc706c2a"
   },
   "video_id": "9O2aDNhVhlA",
   "title": "Product Demo v2.0",
   "desc": "We released multiple enhanced feature. Look at our latest demo video here.",
-  "category": "Info"
-},
-{
-  "_id": {
-    "$oid": "644236eec0cb8d55bc706c2d"
-  },
-  "video_id": "i80k5LTZGow",
-  "title": "Manage Regulatory Compliance via Legitt",
-  "desc": "The video details how can we be ahead in managing regulatory compliance",
   "category": "Info"
 },
 {

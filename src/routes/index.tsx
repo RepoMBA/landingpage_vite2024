@@ -9,6 +9,11 @@ import Support from "../pages/Resources/Support";
 import Videos from "../pages/Resources/Videos";
 import ReleaseNotes from "../pages/Resources/ReleaseNotes";
 import Error from "../pages/404";
+import Glossary from "../pages/Resources/Glossary";
+import EBooks from "../pages/Resources/eBooks";
+import WhitePaper from "../pages/Resources/WhitePaper";
+import WPDetailing from "../pages/Resources/WhitePaper/WPDetailing";
+import Demo from "../pages/Resources/Demo";
 
 import LegittLite from "../pages/Products/LegittLite/index";
 import ContractManagementSoftware from "../pages/ContractManagementSoftware/index";
@@ -18,8 +23,6 @@ import Sales from "../pages/Solutions/Departments/Sales";
 import IT from "../pages/Solutions/Departments/IT";
 import Finance from "../pages/Solutions/Departments/Finance";
 import Salesforce from "../pages/Solutions/Integrations/Salesforce";
-import Glossary from "../pages/Resources/Glossary";
-import EBooks from "../pages/Resources/eBooks";
 
 const AppRoutes = () => {
   return (
@@ -37,6 +40,9 @@ const AppRoutes = () => {
       <Route path="/release-notes" element={<ReleaseNotes />} />
       <Route path="/glossary" element={<Glossary />} />
       <Route path="/ebooks" element={<EBooks />} />
+      <Route path="/white-papers" element={<WhitePaper />} />
+      <Route path="/white-papers/title1" element={<WPDetailing />} />
+      <Route path="/demo" element={<Demo />} />
 
       {/* Products */}
       <Route path="/legitt-lite" element={<LegittLite />} />
@@ -52,9 +58,7 @@ const AppRoutes = () => {
       <Route path="/sales" element={<Sales />} />
       <Route path="/it" element={<IT />} />
       <Route path="/finance" element={<Finance />} />
-
       <Route path="salesforce" element={<Salesforce />} />
-
       <Route path="/error-404" element={<Error />} />
     </Routes>
   );
